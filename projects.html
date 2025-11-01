@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Arush Gumber</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">Arush <span class="highlight">Gumber</span></a>
+            <ul class="nav-menu">
+                <li><a href="index.html">about</a></li>
+                <li><a href="publications.html">publications</a></li>
+                <li><a href="projects.html" class="active">projects</a></li>
+                <li><a href="awards.html">awards</a></li>
+                <li><a href="news.html">news</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <section class="projects-section">
+            <h1>projects</h1>
+            <p class="subtitle">Research publications, technical projects, and systems across computer vision, NLP, and software engineering.</p>
+            
+            <!-- Versatility Statement -->
+            <div class="versatility-note">
+                <p><strong>Research & Engineering Versatility:</strong> My work spans deep learning research (computer vision, NLP, multi-modal learning) and full-stack software engineering. I move fluidly between theoretical research (designing novel architectures, first-author publications at top venues) and practical systems (building production-ready applications, winning hackathons). Whether it's implementing state-of-the-art models from scratch, optimizing CUDA kernels, or architecting scalable systems, I thrive on challenging problems across the AI/ML stack. Below you'll find both research projects (many published at CVPR, NeurIPS, ICMR) and engineering systems demonstrating end-to-end technical capability.</p>
+            </div>
+
+            <!-- VISION SECTION -->
+            <div class="section-divider">
+                <h2 class="section-title">vision</h2>
+            </div>
+
+            <div class="projects-grid-single">
+                
+                <!-- MSCAN (Publication as Project) -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>MSCAN: Multistage Spinal Canal Stenosis Grading</h3>
+                        <span class="project-status">CVPR 2025</span>
+                    </div>
+                    <p class="project-meta">IEEE/CVF CVPR 2025 Demo Track | Published Research</p>
+                    <p class="project-description">
+                        Deep learning framework for automated MRI-based spinal stenosis grading achieving 0.971 AUROC. Designed multi-stage architecture combining YOLO detection with multi-view cross-attention for precise stenosis classification across three severity levels. Presented at CVPR 2025 in Seattle.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">PyTorch</span>
+                        <span class="tech-tag">YOLO</span>
+                        <span class="tech-tag">Cross-Attention</span>
+                        <span class="tech-tag">Medical Imaging</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://arxiv.org/abs/2503.01634" target="_blank" class="project-link">arXiv</a>
+                        <a href="https://github.com/Deep-learning-exp/M-SCAN" target="_blank" class="project-link">Code</a>
+                        <a href="https://www.youtube.com/watch?v=bVLlfGIOBiI" target="_blank" class="project-link">Talk</a>
+                    </div>
+                </div>
+
+                <!-- DentalNet (Publication as Project) -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>DentalNet: Multi-View Transformer for Dental 3D Analysis</h3>
+                        <span class="project-status">NeurIPS 2025</span>
+                    </div>
+                    <p class="project-meta">NeurIPS 2025 Imageomics Workshop | Published Research</p>
+                    <p class="project-description">
+                        Multi-modal 2D/3D fusion achieving 67% F1-score for orthodontic classification. Designed geometric-aware cross-attention mechanism integrating 2D intraoral views with 3D point cloud representations, significantly outperforming single-modality baselines that plateaued at 55%.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Vision Transformers</span>
+                        <span class="tech-tag">Point Clouds</span>
+                        <span class="tech-tag">Multi-Modal Fusion</span>
+                        <span class="tech-tag">Medical AI</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=9qjHhXkAAAAJ&citation_for_view=9qjHhXkAAAAJ:9yKSN-GCB0IC" target="_blank" class="project-link">Scholar</a>
+                    </div>
+                </div>
+
+                <!-- FreqDINO (Publication as Project) -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>FreqDINO: Multi-Modal Deepfake Detection</h3>
+                        <span class="project-status">Under Review</span>
+                    </div>
+                    <p class="project-meta">CVPR 2026 Submission | Research in Progress</p>
+                    <p class="project-description">
+                        Multi-domain deepfake detector fusing semantic, frequency, and noise cues via Band-Conditioned Phased Cross-Attention (BC-PCA). Achieved 98% F1 vs 93.6% baseline with interpretable CLIP/DINO-based U-Net decoder. Curated 100k+ synthetic training dataset with contrastive loss for noise features.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">CLIP</span>
+                        <span class="tech-tag">DINO</span>
+                        <span class="tech-tag">Frequency Analysis</span>
+                        <span class="tech-tag">Deepfake Detection</span>
+                    </div>
+                    <div class="project-links">
+                        <span class="project-private">Under Review</span>
+                    </div>
+                </div>
+
+                <!-- Few-Shot Visual Search -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Few-Shot Visual Search in Satellite Imagery</h3>
+                        <span class="project-status">Top 8/100+</span>
+                    </div>
+                    <p class="project-meta">Grand AI Challenge (PS-03), Government of India</p>
+                    <p class="project-description">
+                        Developed few-shot visual search system for satellite imagery combining frozen self-supervised ViT features with learnable adapters, unifying CNN and transformer embeddings into shared 64-D space for efficient prototype-based retrieval. Found frozen features outperform fine-tuned models. Performed ablations on adapter designs and multi-scale aggregation with per-class PR/F1 metrics.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">PyTorch</span>
+                        <span class="tech-tag">DINO</span>
+                        <span class="tech-tag">Siamese Networks</span>
+                        <span class="tech-tag">Few-Shot Learning</span>
+                    </div>
+                    <div class="project-links">
+                        <span class="project-private">Ongoing Competition</span>
+                    </div>
+                </div>
+
+                <!-- Multimodal Price Prediction -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Multimodal Price Prediction</h3>
+                        <span class="project-status">Rank 54/20,000+</span>
+                    </div>
+                    <p class="project-meta">Amazon ML Challenge 2025</p>
+                    <p class="project-description">
+                        Fused CLIP ViT-B/32 and DINOv2 visual embeddings with TF-IDF text features via cross-attention for product price prediction. Implemented global embedding caches for 5x inference speedup, achieving 42.386 SMAPE without external price lookups.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">CLIP</span>
+                        <span class="tech-tag">DINOv2</span>
+                        <span class="tech-tag">Cross-Attention</span>
+                        <span class="tech-tag">TF-IDF</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/ArushGumber/AmazonMlChallenge" target="_blank" class="project-link">Code</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- NLP SECTION -->
+            <div class="section-divider">
+                <h2 class="section-title">nlp</h2>
+            </div>
+
+            <div class="projects-grid-single">
+
+                <!-- SocialDF (Publication as Project) -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>SocialDF: Benchmark Dataset for Deepfake Detection</h3>
+                        <span class="project-status">ICMR 2025</span>
+                    </div>
+                    <p class="project-meta">ACM ICMR 2025 MAD Workshop | Published Research</p>
+                    <p class="project-description">
+                        Real-world benchmark with multi-agent LLM framework outperforming SOTA lip-sync methods through fact-checking integration. Designed novel evaluation protocol combining visual deepfake detection with semantic consistency verification across modalities.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">LLMs</span>
+                        <span class="tech-tag">Multi-Agent Systems</span>
+                        <span class="tech-tag">Fact-Checking</span>
+                        <span class="tech-tag">Deepfakes</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://dl.acm.org/doi/10.1145/3733567.3735573" target="_blank" class="project-link">ACM DL</a>
+                        <a href="https://www.youtube.com/watch?v=8i3ejDl3q_Q" target="_blank" class="project-link">Talk</a>
+                    </div>
+                </div>
+                
+                <!-- REDACT (moved from dev) -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>REDACT - Data Privacy Platform</h3>
+                        <span class="project-status">Top 2/100+</span>
+                    </div>
+                    <p class="project-meta">Smart India Hackathon 2024 - National Finalist</p>
+                    <p class="project-description">
+                        Multimodal redaction achieving 99% PII detection accuracy across text, images, and documents. BERT-based NLP with few-shot learning for domain adaptation to legal and medical contexts. Deployed for medical, legal, and cybersecurity applications with secure processing pipeline.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">BERT</span>
+                        <span class="tech-tag">Computer Vision</span>
+                        <span class="tech-tag">NLP</span>
+                        <span class="tech-tag">Few-Shot Learning</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/ArushGumber/TrueSight" target="_blank" class="project-link">Code</a>
+                        <a href="https://www.youtube.com/watch?v=-Awr0FBJfjY" target="_blank" class="project-link">Demo</a>
+                    </div>
+                </div>
+
+                <!-- MusicBind -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>MusicBind - Cross-Modal Song Retrieval</h3>
+                    </div>
+                    <p class="project-meta">Research Prototype</p>
+                    <p class="project-description">
+                        Aligned audio, text, image, and graph modalities in shared hyperbolic embedding space using triplet loss for cross-modal song retrieval. Built PyTorch pipeline with graph neural networks, evaluating on GTZAN dataset with hyperbolic distance metrics for hierarchical music relationships.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">PyTorch</span>
+                        <span class="tech-tag">Graph Neural Networks</span>
+                        <span class="tech-tag">Hyperbolic Embeddings</span>
+                        <span class="tech-tag">Multi-Modal Learning</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/arnesh2212/Image2Song" target="_blank" class="project-link">Code</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- DEV SECTION -->
+            <div class="section-divider">
+                <h2 class="section-title">dev</h2>
+            </div>
+
+            <div class="projects-grid-single">
+
+                <!-- Algorithmic Trading -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Algorithmic Trading System</h3>
+                    </div>
+                    <p class="project-meta">Time Series Analysis, Financial ML</p>
+                    <p class="project-description">
+                        LSTM and Transformer models on NSE tick data with sentiment integration from news sources. Real-time execution via Kite API processing 1000+ ticks/second with latency optimization. Confidence scoring for candlestick patterns with Streamlit monitoring dashboard.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">LSTM</span>
+                        <span class="tech-tag">Transformers</span>
+                        <span class="tech-tag">Time Series</span>
+                        <span class="tech-tag">Streamlit</span>
+                    </div>
+                    <div class="project-links">
+                        <span class="project-private">Under Development</span>
+                    </div>
+                </div>
+
+                <!-- Marvel Birds -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Marvel Birds - Physics Engine</h3>
+                    </div>
+                    <p class="project-meta">Java, LibGDX, Design Patterns</p>
+                    <p class="project-description">
+                        Physics simulation with collision detection and dynamic level generation using Box2D. Applied Factory and Observer patterns for extensible architecture and modular game mechanics.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">LibGDX</span>
+                        <span class="tech-tag">Box2D</span>
+                        <span class="tech-tag">Design Patterns</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/ArushGumber/SOTA_AP_project" target="_blank" class="project-link">Code</a>
+                        <a href="https://www.youtube.com/watch?v=BgPh7yGTrvE" target="_blank" class="project-link">Demo</a>
+                    </div>
+                </div>
+
+                <!-- BidBazar -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>BidBazar - Auction Platform</h3>
+                    </div>
+                    <p class="project-meta">Concurrent Systems, SQL Optimization</p>
+                    <p class="project-description">
+                        Real-time bidding system handling 1000+ concurrent users with optimized database queries. Implemented auto-bidding with sniping protection and price prediction using regression models.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">SQL</span>
+                        <span class="tech-tag">Concurrent Programming</span>
+                        <span class="tech-tag">Web Development</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/ArushGumber/BidBazaar" target="_blank" class="project-link">Code</a>
+                    </div>
+                </div>
+
+                <!-- RISC-V Assembler -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>RISC-V Assembler & Simulator</h3>
+                    </div>
+                    <p class="project-meta">Systems Programming, CI/CD</p>
+                    <p class="project-description">
+                        RV32I instruction set implementation with memory management and label resolution. 95% test coverage with automated CI/CD pipeline and comprehensive error handling.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Systems Programming</span>
+                        <span class="tech-tag">CI/CD</span>
+                        <span class="tech-tag">Testing</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/ArushGumber/Assembler" target="_blank" class="project-link">Code</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Arush Gumber. Built with HTML, CSS, and JavaScript.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
