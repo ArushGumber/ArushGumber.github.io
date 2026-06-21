@@ -1,8 +1,8 @@
 (function () {
   function makeTargets(N, rnd) {
-    var T = {}, names = ['base', 'vision', 'multimodal', 'audio', 'graph', 'market', 'robotics', 'biology', 'llm'];
+    var T = {}, names = ['base', 'vision', 'multimodal', 'audio', 'graph', 'market', 'robotics', 'biology', 'llm', 'cs'];
     for (var n = 0; n < names.length; n++) T[names[n]] = new Float32Array(N * 3);
-    var GA = 2.399963;
+    var GA = 2.399963, Sc = Math.round(Math.cbrt(N)), csc = 3.0 / (Sc - 1);
     for (var i = 0; i < N; i++) {
       var j = i * 3, s = i / N, r1 = rnd[j], r2 = rnd[j + 1], r3 = rnd[j + 2];
       var y = 1 - (i / (N - 1)) * 2, rad = Math.sqrt(Math.max(0, 1 - y * y)), th = GA * i;
@@ -32,6 +32,10 @@
       T.multimodal[j] = 0.5 * T.vision[j] + 0.5 * T.audio[j];
       T.multimodal[j + 1] = 0.5 * T.vision[j + 1] + 0.5 * T.audio[j + 1];
       T.multimodal[j + 2] = 0.5 * T.vision[j + 2] + 0.5 * T.audio[j + 2];
+      var gx = i % Sc, gy = ((i / Sc) | 0) % Sc, gz = (i / (Sc * Sc)) | 0;
+      T.cs[j] = (gx - (Sc - 1) / 2) * csc + r1 * 0.05;
+      T.cs[j + 1] = (gy - (Sc - 1) / 2) * csc + r2 * 0.05;
+      T.cs[j + 2] = (gz - (Sc - 1) / 2) * csc + r3 * 0.05;
     }
     return T;
   }

@@ -47,7 +47,6 @@
     renderStack(data);
     renderContact(data);
     renderProjects(data);
-    renderFoundations(data);
     refreshDomains();
     wireMenu();
     wirePortraitTilt();
@@ -301,18 +300,6 @@
       };
       Object.keys(d.skills).forEach(function (k) { addGroup(k, d.skills[k]); });
       if (d.coursework && d.coursework.length) addGroup('Coursework', d.coursework);
-    }
-
-    function renderFoundations(d) {
-      var host = document.getElementById('cs-foundations');
-      clear(host);
-      (d.foundations || []).forEach(function (f) {
-        var item = node('div', 'foundation');
-        item.appendChild(node('div', 'foundation-title', f.title));
-        if (f.note) item.appendChild(node('div', 'foundation-note', f.note));
-        if (f.links && Object.keys(f.links).length) item.appendChild(linkRow(f.links));
-        host.appendChild(item);
-      });
     }
 
     function renderContact(d) {

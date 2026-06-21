@@ -80,6 +80,14 @@
       "coord": "tokens",
       "morph": "llm",
       "blurb": "token streams & attention paths"
+    },
+    {
+      "id": "cs",
+      "index": "09",
+      "label": "CS Fundamentals",
+      "coord": "0/1 → systems",
+      "morph": "cs",
+      "blurb": "assemblers, databases & engines"
     }
   ],
   "projects": [
@@ -247,6 +255,71 @@
       ],
       "links": {
         "code": "https://github.com/arnesh2212/Image2Song"
+      }
+    },
+    {
+      "id": "riscv",
+      "domains": [
+        "cs"
+      ],
+      "kicker": "CS Fundamentals · Architecture",
+      "title": "Custom RISC-V Assembler & Simulator",
+      "subtitle": "RV32I ISA · course project (Prof. Sujay Deb)",
+      "problem": "Assemble and execute the full RV32I instruction set, correctly.",
+      "built": "A complete assembler and simulator with full instruction encoding, memory management and a CI/CD pipeline.",
+      "metricValue": "95%",
+      "metricLabel": "test coverage · RV32I ISA · CI/CD",
+      "tags": [
+        "RISC-V",
+        "Systems",
+        "Architecture",
+        "CI/CD"
+      ],
+      "links": {
+        "code": "https://github.com/ArushGumber/Assembler"
+      }
+    },
+    {
+      "id": "bidbazar",
+      "domains": [
+        "cs"
+      ],
+      "kicker": "CS Fundamentals · Databases",
+      "title": "BidBazar: Real-time Auction Platform",
+      "subtitle": "Concurrent bidding · course project (Prof. Mukesh Mohania)",
+      "problem": "Resolve concurrent bids for 1000+ users without races.",
+      "built": "A real-time auction platform with SQL-optimized bid resolution and ML-based price forecasting.",
+      "metricValue": "1000+",
+      "metricLabel": "concurrent users · SQL-optimized resolution",
+      "tags": [
+        "Full-Stack",
+        "SQL",
+        "Concurrency"
+      ],
+      "links": {
+        "code": "https://github.com/ArushGumber/BidBazaar"
+      }
+    },
+    {
+      "id": "marvelbirds",
+      "domains": [
+        "cs"
+      ],
+      "kicker": "CS Fundamentals · OOP & Engines",
+      "title": "Marvel Birds: Game Engine",
+      "subtitle": "Physics engine · course project (Prof. Sambuddho Chakravarty)",
+      "problem": "Build a 2D physics engine with clean, extensible architecture.",
+      "built": "A LibGDX physics engine with collision detection, using Factory and Observer design patterns.",
+      "metricValue": "LibGDX",
+      "metricLabel": "physics · collisions · Factory/Observer",
+      "tags": [
+        "OOP",
+        "Game Engine",
+        "Design Patterns"
+      ],
+      "links": {
+        "code": "https://github.com/ArushGumber/SOTA_AP_project",
+        "demo": "https://youtu.be/BgPh7yGTrvE"
       }
     }
   ],
@@ -554,30 +627,6 @@
     "DBMS",
     "Machine Learning",
     "Linear Algebra"
-  ],
-  "foundations": [
-    {
-      "title": "Custom RISC-V Assembler & Simulator",
-      "note": "RV32I ISA · CI/CD @ 95% coverage",
-      "links": {
-        "code": "https://github.com/ArushGumber/Assembler"
-      }
-    },
-    {
-      "title": "BidBazar: Real-time Auction Platform",
-      "note": "1000+ concurrent users · SQL-optimized",
-      "links": {
-        "code": "https://github.com/ArushGumber/BidBazaar"
-      }
-    },
-    {
-      "title": "Marvel Birds: Game Engine",
-      "note": "LibGDX physics · Factory/Observer",
-      "links": {
-        "code": "https://github.com/ArushGumber/SOTA_AP_project",
-        "demo": "https://youtu.be/BgPh7yGTrvE"
-      }
-    }
   ],
   "workIntro": [
     {

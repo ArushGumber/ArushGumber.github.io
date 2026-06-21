@@ -797,20 +797,6 @@ a { color: inherit; }
 .skill-group-label { font-family: var(--mono); font-size: 11px; color: var(--accent); margin-bottom: 7px; }
 .skill-chips { display: flex; flex-wrap: wrap; gap: 6px; }
 .skill-chip { font-size: 12.5px; color: var(--text-3); border: 1px solid var(--hair-10); border-radius: 6px; padding: 4px 9px; }
-.cs-foundations { margin-top: 44px; padding-top: 28px; border-top: 1px solid var(--hair-09); }
-.cs-foundations-intro { font-size: 13px; line-height: 1.55; color: var(--muted); max-width: 520px; margin: -2px 0 16px; }
-.cs-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; }
-.foundation {
-  border: 1px solid var(--hair-10);
-  border-radius: 10px;
-  padding: 14px 16px;
-  transition: border-color .18s, transform .18s;
-}
-.foundation:hover { border-color: rgba(240, 236, 228, 0.22); transform: translateY(-2px); }
-.foundation-title { font-size: 14px; font-weight: 600; color: var(--text); letter-spacing: -0.01em; }
-.foundation-note { font-family: var(--mono); font-size: 10.5px; color: var(--muted); margin-top: 4px; letter-spacing: 0.02em; }
-.foundation .link-row { margin-top: 7px; }
-.foundation .xlink { font-size: 10.5px; }
 
 .contact {
   scroll-margin-top: 62px;
@@ -906,7 +892,6 @@ a { color: inherit; }
   .pub { grid-template-columns: 1fr; }
   .build-cards { grid-template-columns: 1fr; }
   .news-row { grid-template-columns: 1fr; }
-  .cs-grid { grid-template-columns: 1fr; }
 }
 
 @media (prefers-reduced-motion: reduce) {
