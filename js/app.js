@@ -4,8 +4,8 @@
     website: 'Website', scholar: 'Scholar', github: 'GitHub', linkedin: 'LinkedIn', resume: 'Résumé'
   };
   var SOCIAL_ORDER = ['scholar', 'github', 'linkedin'];
-  var TIER_ORDER = ['conference', 'workshop', 'preprint'];
-  var TIER_LABELS = { conference: 'Main conference', workshop: 'Workshop', preprint: 'Under review' };
+  var TIER_ORDER = ['conference', 'journal', 'workshop', 'preprint'];
+  var TIER_LABELS = { conference: 'Main conference', journal: 'Journal', workshop: 'Workshop', preprint: 'Under review' };
 
   function node(tag, cls, text) {
     var n = document.createElement(tag);

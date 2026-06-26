@@ -165,7 +165,7 @@
       "problem": "Locate rare, tiny targets (<0.1% of image) from a handful of labels.",
       "built": "A multi-stage detect-then-verify pipeline: weak-label expansion, ensembled detection, and feature/geometry verification to kill false positives.",
       "metricValue": "+35% mAP",
-      "metricLabel": "over baseline · Top 3 of 50+ · Stage 2 · ₹38L secured",
+      "metricLabel": "over baseline · Top 3 in PS-03 · Stage 2 cleared · ₹38L",
       "tags": [
         "Few-Shot",
         "Detection",
@@ -441,24 +441,26 @@
       "astar": false
     },
     {
-      "title": "Lightweight Tiny Object Detection via Multi-Expert Feature Fusion",
+      "title": "TOAM-YOLO: A Tiny Object-Aware Multi-Expert YOLO Framework for Diverse Domains",
       "venue": "TMLR",
-      "status": "Under review",
+      "status": "Accepted",
       "authorship": "First Author",
-      "tier": "preprint",
+      "tier": "journal",
       "year": 2026,
       "links": {},
-      "summary": "A 4M-param tiny-object detector with a TOA-MoE module and BiFPN+CARAFE fusion, achieving SOTA on five benchmarks.",
-      "astar": false
+      "summary": "TOA-MoE (Hessian-curvature + Fourier-frequency experts with 3-level attention) plus BiFPN and CARAFE fusion, plug-and-play on YOLOv11/v12; consistent mAP gains across five tiny-object and blood-cell benchmarks while adding only 0.75M parameters.",
+      "astar": true
     }
   ],
   "founder": {
     "kicker": "Co-Founder & Lead Researcher",
     "name": "StarkVision",
-    "description": "A 20-member student AI/ML research collective. I drove the core technical work behind our entry to the Govt. of India NCIIPC AI Grand Challenge, and mentor 10+ juniors from idea to conference acceptance.",
+    "description": "A 20-member student AI/ML research collective whose work spans an ICML 2026 Spotlight, 6 ICML 2026 workshop papers, CVPR 2025 (Demo Track) and a TMLR journal paper. I drove the core technical work behind our entry to the Govt. of India NCIIPC AI Grand Challenge, and mentor 10+ juniors from idea to acceptance.",
     "badges": [
-      "CVPR 2025 · student-only authorship",
-      "ICMR 2025"
+      "ICML 2026 Spotlight",
+      "6 ICML 2026 workshops",
+      "CVPR 2025 Demo",
+      "TMLR · first author"
     ]
   },
   "founderStats": [
@@ -468,7 +470,7 @@
     },
     {
       "value": "Top 3",
-      "label": "of 50+ startups · advanced to Stage 2"
+      "label": "in PS-03 of 670+ nationwide · Stage 2 cleared"
     },
     {
       "value": "20",
@@ -487,8 +489,8 @@
     },
     {
       "kicker": "Research",
-      "title": "Computer Vision Research, Infosys CAI",
-      "detail": "Under Dr. Anubha Gupta: object/deepfake/tiny-object detection and multi-modal learning; first-author on multiple manuscripts."
+      "title": "Computer Vision Research, Centre for AI (SBILab)",
+      "detail": "Under Prof. Anubha Gupta at the Centre for AI / SBILab, IIIT-Delhi: object/deepfake/tiny-object detection and multi-modal learning; first-author on multiple manuscripts."
     },
     {
       "kicker": "Research",
@@ -527,6 +529,12 @@
     },
     {
       "date": "2026",
+      "title": "TMLR: TOAM-YOLO accepted (first author)",
+      "tag": "journal",
+      "detail": "A tiny-object-aware multi-expert YOLO framework; consistent gains across five benchmarks at +0.75M parameters."
+    },
+    {
+      "date": "2026",
       "title": "Six ICML 2026 workshop acceptances",
       "tag": "workshops",
       "detail": "NanoDroid across two workshops (Deep Learning for Code and Human-AI Co-Creativity), drug–target affinity, trimodal memes, and two frozen-audio-encoder studies."
@@ -551,9 +559,9 @@
     },
     {
       "date": "2025",
-      "title": "NCIIPC AI Grand Challenge: Top 3 / 50+, ₹38L",
+      "title": "NCIIPC AI Grand Challenge: Top 3 in PS-03, ₹38L",
       "tag": "grant",
-      "detail": "StarkVision advanced to Stage 2 with ₹38 lakhs secured."
+      "detail": "Top 3 in our problem statement (PS-03) and Stage 2 cleared, among 670+ startups nationwide; ₹38 lakhs secured."
     },
     {
       "date": "2024",
@@ -565,7 +573,7 @@
       "date": "May 2024",
       "title": "Co-founded StarkVision",
       "tag": "founder",
-      "detail": "A 20-member student AI/ML research collective at IIIT-Delhi."
+      "detail": "A 20-member student AI/ML research collective at IIIT-Delhi; work accepted at an ICML 2026 Spotlight, 6 ICML workshops, CVPR 2025 Demo and TMLR."
     }
   ],
   "about": {
@@ -589,7 +597,7 @@
       }
     ],
     "bio": "I work on representation learning across computer vision, audio, graphs and markets, with a recurring thread of reading the geometry of what models learn. I care about the moment a messy problem snaps into a representation where the answer is suddenly easy.",
-    "credentials": "Computer Science and Artificial Intelligence at IIIT-Delhi · GPA 8.91/10 · 2023–2027 · research with the University of Vienna and UC San Diego · incoming SWE intern at S&P Global."
+    "credentials": "Computer Science and Artificial Intelligence at IIIT-Delhi · GPA 8.91/10 · 2023–2027 · research under Prof. Anubha Gupta (SBILab, Centre for AI, IIIT-Delhi), with the University of Vienna and UC San Diego · incoming SWE intern at S&P Global."
   },
   "skills": {
     "Languages": [
