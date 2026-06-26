@@ -358,7 +358,7 @@
       "title": "DentalNet: Geometric-Aware Multi-View Transformer for Dental 3D Scan Analysis",
       "venue": "NeurIPS 2025 WS",
       "status": "Accepted",
-      "authorship": "First Author",
+      "authorship": "Co-First Author",
       "tier": "workshop",
       "year": 2025,
       "links": {
@@ -371,7 +371,7 @@
       "title": "Scalable and Interpretable Detection of LLM-Generated Code",
       "venue": "ICML 2026 Workshops",
       "status": "Accepted",
-      "authorship": "Solo Author",
+      "authorship": null,
       "tier": "workshop",
       "year": 2026,
       "links": {},
@@ -444,7 +444,7 @@
       "title": "TOAM-YOLO: A Tiny Object-Aware Multi-Expert YOLO Framework for Diverse Domains",
       "venue": "TMLR",
       "status": "Accepted",
-      "authorship": "First Author",
+      "authorship": "Co-First Author",
       "tier": "journal",
       "year": 2026,
       "links": {},
@@ -460,7 +460,7 @@
       "ICML 2026 Spotlight",
       "6 ICML 2026 workshops",
       "CVPR 2025 Demo",
-      "TMLR · first author"
+      "TMLR · co-first author"
     ]
   },
   "founderStats": [
@@ -490,7 +490,7 @@
     {
       "kicker": "Research",
       "title": "Computer Vision Research, Centre for AI (SBILab)",
-      "detail": "Under Prof. Anubha Gupta at the Centre for AI / SBILab, IIIT-Delhi: object/deepfake/tiny-object detection and multi-modal learning; first-author on multiple manuscripts."
+      "detail": "Under Prof. Anubha Gupta at the Centre for AI / SBILab, IIIT-Delhi: object/deepfake/tiny-object detection and multi-modal learning; co-first-author on multiple manuscripts."
     },
     {
       "kicker": "Research",
@@ -529,7 +529,7 @@
     },
     {
       "date": "2026",
-      "title": "TMLR: TOAM-YOLO accepted (first author)",
+      "title": "TMLR: TOAM-YOLO accepted (co-first author)",
       "tag": "journal",
       "detail": "A tiny-object-aware multi-expert YOLO framework; consistent gains across five benchmarks at +0.75M parameters."
     },
@@ -541,7 +541,7 @@
     },
     {
       "date": "2025",
-      "title": "NeurIPS 2025 Imageomics Workshop: first author",
+      "title": "NeurIPS 2025 Imageomics Workshop: co-first author",
       "tag": "workshop",
       "detail": "DentalNet: geometry-aware multi-view 2D/3D fusion."
     },
