@@ -2,8 +2,6 @@
   "updated": "2026-11-03",
   "profile": {
     "name": "Arush Gumber",
-    "navTagline": "researcher · engineer · founder",
-    "roleLine": "Researcher, engineer, founder · in that order, depending on the day",
     "email": "arush23136@iiitd.ac.in",
     "self": "A. Gumber",
     "links": {
@@ -11,319 +9,240 @@
       "scholar": "https://scholar.google.com/citations?user=9qjHhXkAAAAJ&hl=en",
       "github": "https://github.com/ArushGumber",
       "linkedin": "https://www.linkedin.com/in/arushgumber/"
-    }
+    },
+    "tagline": "researcher · engineer · founder"
   },
   "connect": {
     "label": "Request résumé",
     "subject": "Let's connect",
     "body": "Hi Arush,\n\nI came across your portfolio and would like to connect. Could you please share your résumé?\n\nThanks!"
   },
-  "domains": [
+  "hero": {
+    "kicker": "input · x = arush",
+    "footnotes": [
+      "founder, compression enjoyer, sweats through every pitch, ships anyway",
+      "researcher, insufferable about rigor, reviewer 2 in spirit"
+    ],
+    "formula": {
+      "lhs": "Arush",
+      "left": "Hendricks",
+      "right": "Cooper",
+      "where": "is resampled daily."
+    },
+    "proof": "By construction. See the papers and the companies below."
+  },
+  "about": {
+    "headline": [
+      {
+        "text": "Somewhere between "
+      },
+      {
+        "text": "Richard Hendricks",
+        "tone": "accent"
+      },
+      {
+        "text": " and "
+      },
+      {
+        "text": "Sheldon Cooper",
+        "tone": "accent"
+      },
+      {
+        "text": "."
+      }
+    ],
+    "credentials": "Final-year **B.Tech, Computer Science and AI, IIIT-Delhi** (2023–2027) · **GPA 8.91/10** · thesis with **Prof. Anubha Gupta** (SBILab) · research intern at **SHIBA AI** · collaborating with the **University of Vienna** · previously ML intern at **S&P Global**.",
+    "intro": "Modern models learn representations that nobody fully reads. The subject spends most waking hours reading them: **which layers hold the signal, what their geometry reveals, and when an evaluation is quietly lying.** The work runs on a recurring hunch that the domain changes but the underlying game usually does not, so the same questions get asked of images, audio, graphs, language and order books.",
+    "footnote": "Trading markets since age 16, which is probably why every backtest that looks too good gets audited twice.",
+    "paragraphs": [
+      "I study **what deep models actually learn**: which layer knows what, and whether the evaluation we trust is measuring the model or the estimator.",
+      "Then I make it pay rent: on satellites under a government NDA, on documents at S&P Global, on order books. **I have traded markets since I was 16.**"
+    ]
+  },
+  "keyFacts": [
     {
-      "id": "vision",
-      "index": "01",
-      "label": "Computer Vision",
-      "coord": "Rᵈ→spatial",
-      "morph": "vision",
-      "blurb": "spatial patches · detection · medical imaging"
+      "value": "15",
+      "label": "peer-reviewed papers",
+      "countAccepted": true
     },
     {
-      "id": "multimodal",
-      "index": "02",
-      "label": "Multimodal",
-      "coord": "2D⊕3D⊕txt",
-      "morph": "multimodal",
-      "blurb": "fusing modalities into one representation"
+      "value": "ICML",
+      "label": "2026 **Spotlight**"
     },
     {
-      "id": "audio",
-      "index": "03",
-      "label": "Audio & Speech",
-      "coord": "spectral",
-      "morph": "audio",
-      "blurb": "waveforms & spectral ribbons"
+      "value": "TMLR",
+      "label": "journal, co-first author"
     },
     {
-      "id": "graph",
-      "index": "04",
-      "label": "Graph Learning",
-      "coord": "V,E",
-      "morph": "graph",
-      "blurb": "relational nodes & edges"
+      "value": "EMNLP",
+      "label": "2026 Industry Track"
     },
     {
-      "id": "market",
-      "index": "05",
-      "label": "Financial Markets",
-      "coord": "P(t)",
-      "morph": "market",
-      "blurb": "price paths, bands & order flow"
+      "value": "₹38L",
+      "label": "grants and prizes, **Top 3 of 670+**"
     },
     {
-      "id": "robotics",
-      "index": "06",
-      "label": "Robotics",
-      "coord": "sₜ→sₜ₊₁",
-      "morph": "robotics",
-      "blurb": "predicted state trajectories"
-    },
-    {
-      "id": "biology",
-      "index": "07",
-      "label": "Comp. Biology",
-      "coord": "seq/struct",
-      "morph": "biology",
-      "blurb": "molecular & cellular forms"
-    },
-    {
-      "id": "llm",
-      "index": "08",
-      "label": "LLM & Agents",
-      "coord": "tokens",
-      "morph": "llm",
-      "blurb": "token streams & attention paths"
-    },
-    {
-      "id": "cs",
-      "index": "09",
-      "label": "CS Fundamentals",
-      "coord": "0/1 → systems",
-      "morph": "cs",
-      "blurb": "assemblers, databases & engines"
+      "value": "8.91",
+      "label": "GPA out of 10, IIIT-Delhi"
     }
   ],
-  "projects": [
+  "photos": [
     {
-      "id": "sat",
-      "domains": [
-        "vision"
-      ],
-      "kicker": "Vision · Gov. AI Challenge · now NivionAI",
-      "title": "Few-Shot Visual Search in Satellite Imagery",
-      "subtitle": "NCIIPC Startup India AI Grand Challenge (PS-03)",
-      "problem": "Locate rare, tiny targets (<0.1% of image) from a handful of labels.",
-      "built": "A multi-stage detect-then-verify pipeline: weak-label expansion, ensembled detection, and feature/geometry verification to kill false positives.",
-      "metricValue": "+35% mAP",
-      "metricLabel": "over baseline · Top 3 of 670+ · Stage 2 cleared · ₹38L",
-      "tags": [
-        "Few-Shot",
-        "Detection",
-        "Satellite",
-        "Retrieval"
-      ],
-      "links": {}
+      "file": "cvpr-demo",
+      "width": 1100,
+      "height": 828,
+      "alt": "Arush presenting his live demo at the CVPR 2025 demo booth",
+      "where": "Nashville, Tennessee",
+      "caption": "My first deep learning project, which became a paper and then a live demo.",
+      "year": 2025,
+      "order": 1,
+      "group": "conference",
+      "venue": "CVPR 2025 · Nashville"
     },
     {
-      "id": "rank",
-      "domains": [
-        "market"
-      ],
-      "kicker": "Financial Markets",
-      "title": "LangGraph Multi-Agent Stock Reranker",
-      "subtitle": "Implicit-feedback collaborative filtering for weekly equity ranking",
-      "problem": "Rank weekly Indian equities as regimes shift and signals decay.",
-      "built": "A bounded LangGraph multi-agent reranker over a tuned blend of 7 expert rankers, with LLM sub-agents injecting macro, news and fundamentals.",
-      "metricValue": "+22.51%",
-      "metricLabel": "cumulative · Sharpe 1.45 · beat Nifty 50 in 28/41 wks",
-      "tags": [
-        "Quant",
-        "LangGraph",
-        "Multi-Agent",
-        "Learn-to-Rank"
-      ],
-      "links": {
-        "preprint": "https://drive.google.com/file/d/1YUOSAEDwx0VHwnmYGBABRjqN9IYPocAE/view?usp=sharing"
-      }
+      "file": "icml-loes",
+      "width": 1400,
+      "height": 1054,
+      "alt": "A crowd of people gathered in front of the LOES poster at ICML 2026",
+      "where": "Seoul, South Korea",
+      "caption": "A crowd around the LOES poster, larger than we planned for.",
+      "year": 2026,
+      "order": 2,
+      "group": "conference",
+      "venue": "ICML 2026 · Seoul"
     },
     {
-      "id": "hft",
-      "domains": [
-        "market"
-      ],
-      "kicker": "Financial Markets · In development",
-      "title": "Algorithmic Trading System",
-      "subtitle": "NSE tick data · Kite API · in development",
-      "problem": "Trade NSE intraday in real time, from signal to execution to monitoring.",
-      "built": "LSTM/Transformer forecasters on tick data with sentiment features, Kite API execution and a live monitoring dashboard, handling 1,000+ ticks per second.",
-      "metricValue": "1k+ ticks/s",
-      "metricLabel": "LSTM/Transformer · Kite API · live dashboard",
-      "tags": [
-        "Quant",
-        "Time-Series",
-        "Execution"
-      ],
-      "links": {}
+      "file": "icml-solo",
+      "width": 1054,
+      "height": 1400,
+      "alt": "Arush standing in front of his solo-author poster at the ICML 2026 AI4Good workshop",
+      "where": "Seoul, South Korea",
+      "caption": "My first solo-author paper.",
+      "year": 2026,
+      "order": 3,
+      "group": "conference",
+      "venue": "ICML 2026 · Seoul"
     },
     {
-      "id": "droid",
-      "domains": [
-        "robotics"
-      ],
-      "kicker": "Robotics · World Models",
-      "title": "DroidPlanner: JEPA World Model",
-      "subtitle": "Multi-step latent consistency & spatial aggregation for planning",
-      "problem": "Plan offline, goal-conditioned, from latent dynamics, stably.",
-      "built": "Extended LeWM-style JEPA with a K=3 latent-consistency loss and a PatchSpatialAggregator restoring ViT patch info via gated pyramid fusion.",
-      "metricValue": "85.0±1.15",
-      "metricLabel": "DMControl Reacher · 4.6× variance contraction · ~3% params",
-      "tags": [
-        "JEPA",
-        "Planning",
-        "Self-Supervised"
-      ],
-      "links": {
-        "preprint": "https://drive.google.com/file/d/1UarPLUdkPoJXkTfVJI1n8sCsYnv4r_8T/view?usp=sharing"
-      }
+      "file": "brooklyn",
+      "width": 1054,
+      "height": 1400,
+      "alt": "Arush on the Brooklyn Bridge at sunset",
+      "where": "Brooklyn Bridge, New York",
+      "caption": "Brooklyn Bridge. A rare occasion on which the subject was outdoors.",
+      "year": 2026,
+      "order": 4,
+      "group": "personal"
     },
     {
-      "id": "redact",
-      "domains": [
-        "multimodal"
-      ],
-      "kicker": "Multimodal · Privacy",
-      "title": "REDACT: Data Privacy Platform",
-      "subtitle": "Smart India Hackathon 2024 · Top 2 / 100+",
-      "problem": "Redact PII across text, images and documents reliably.",
-      "built": "A multimodal redaction engine with BERT-based NLP and few-shot domain adaptation for legal/medical docs, behind a secure pipeline.",
-      "metricValue": "99%",
-      "metricLabel": "detection accuracy · national finalist",
-      "tags": [
-        "Multimodal",
-        "NLP",
-        "PII"
-      ],
-      "links": {
-        "code": "https://github.com/ArushGumber/TrueSight",
-        "demo": "https://www.youtube.com/watch?v=-Awr0FBJfjY"
-      }
+      "file": "skyline",
+      "width": 1054,
+      "height": 1400,
+      "alt": "Arush at night with the Manhattan skyline behind him",
+      "where": "Manhattan, from the Hudson",
+      "caption": "Manhattan after close. Market hours are a suggestion.",
+      "year": 2026,
+      "order": 5,
+      "group": "personal"
     },
     {
-      "id": "amazon",
-      "domains": [
-        "multimodal"
-      ],
-      "kicker": "Multimodal · Competition",
-      "title": "Multimodal Price Prediction",
-      "subtitle": "Amazon ML Challenge 2025 · Rank 54 / 20,000+",
-      "problem": "Predict product price from image + text without price lookups.",
-      "built": "Fused CLIP ViT-B/32 and DINOv2 visual embeddings with TF-IDF text via cross-attention; global embedding caches for 5× inference speedup.",
-      "metricValue": "54 / 20k",
-      "metricLabel": "42.39 SMAPE · top 0.3%",
-      "tags": [
-        "CLIP",
-        "DINOv2",
-        "Cross-Attention"
-      ],
-      "links": {
-        "code": "https://github.com/ArushGumber/AmazonMlChallenge"
-      }
-    },
-    {
-      "id": "underwater",
-      "domains": [
-        "audio"
-      ],
-      "kicker": "Audio · Bioacoustics",
-      "title": "Underwater Acoustic Event Detection",
-      "subtitle": "Unified framework · manuscript in preparation",
-      "problem": "Assess biodiversity and vessel activity from long marine soundscapes.",
-      "built": "Standardized multiple marine acoustic datasets and a joint detection framework over long-duration audio.",
-      "metricValue": "in prep",
-      "metricLabel": "time-series · signal processing",
-      "tags": [
-        "Bioacoustics",
-        "Time-Series",
-        "Audio"
-      ],
-      "links": {}
-    },
-    {
-      "id": "musicbind",
-      "domains": [
-        "audio"
-      ],
-      "kicker": "Cross-Modal · Retrieval",
-      "title": "MusicBind: Cross-Modal Song Retrieval",
-      "subtitle": "Research prototype",
-      "problem": "Align audio, text, image and graph in one space for retrieval.",
-      "built": "A PyTorch cross-modal system in a hyperbolic embedding space with GNNs, evaluated on GTZAN.",
-      "metricValue": "4-modal",
-      "metricLabel": "hyperbolic embeddings · GNN",
-      "tags": [
-        "Cross-Modal",
-        "Hyperbolic",
-        "GNN"
-      ],
-      "links": {
-        "code": "https://github.com/arnesh2212/Image2Song"
-      }
-    },
-    {
-      "id": "riscv",
-      "domains": [
-        "cs"
-      ],
-      "kicker": "CS Fundamentals · Architecture",
-      "title": "Custom RISC-V Assembler & Simulator",
-      "subtitle": "RV32I ISA · course project (Prof. Sujay Deb)",
-      "problem": "Assemble and execute the full RV32I instruction set, correctly.",
-      "built": "A complete assembler and simulator with full instruction encoding, memory management and a CI/CD pipeline.",
-      "metricValue": "95%",
-      "metricLabel": "test coverage · RV32I ISA · CI/CD",
-      "tags": [
-        "RISC-V",
-        "Systems",
-        "Architecture",
-        "CI/CD"
-      ],
-      "links": {
-        "code": "https://github.com/ArushGumber/Assembler"
-      }
-    },
-    {
-      "id": "bidbazar",
-      "domains": [
-        "cs"
-      ],
-      "kicker": "CS Fundamentals · Databases",
-      "title": "BidBazar: Real-time Auction Platform",
-      "subtitle": "Concurrent bidding · course project (Prof. Mukesh Mohania)",
-      "problem": "Resolve concurrent bids for 1000+ users without races.",
-      "built": "A real-time auction platform with SQL-optimized bid resolution, auto-bidding and sniping protection.",
-      "metricValue": "1000+",
-      "metricLabel": "concurrent users · SQL-optimized resolution",
-      "tags": [
-        "Full-Stack",
-        "SQL",
-        "Concurrency"
-      ],
-      "links": {
-        "code": "https://github.com/ArushGumber/BidBazaar"
-      }
-    },
-    {
-      "id": "marvelbirds",
-      "domains": [
-        "cs"
-      ],
-      "kicker": "CS Fundamentals · OOP & Engines",
-      "title": "Marvel Birds: Game Engine",
-      "subtitle": "Physics engine · course project (Prof. Sambuddho Chakravarty)",
-      "problem": "Build a 2D physics engine with clean, extensible architecture.",
-      "built": "A LibGDX and Box2D physics engine with collision detection, using Factory and Observer design patterns.",
-      "metricValue": "LibGDX",
-      "metricLabel": "physics · collisions · Factory/Observer",
-      "tags": [
-        "OOP",
-        "Game Engine",
-        "Design Patterns"
-      ],
-      "links": {
-        "code": "https://github.com/ArushGumber/SOTA_AP_project",
-        "demo": "https://youtu.be/BgPh7yGTrvE"
-      }
+      "file": "nyse",
+      "width": 1054,
+      "height": 1400,
+      "alt": "Arush looking up at the New York Stock Exchange on Wall Street",
+      "where": "NYSE, Wall Street, New York",
+      "caption": "Wall Street. Looking up, for now.",
+      "year": 2026,
+      "order": 6,
+      "label": "the long-term goal",
+      "group": "cover"
     }
   ],
+  "layers": [
+    {
+      "id": "input",
+      "lo": 0,
+      "hi": 0,
+      "name": "input"
+    },
+    {
+      "id": "about",
+      "lo": 1,
+      "hi": 1,
+      "name": "embed",
+      "title": "About",
+      "op": "h₁ = embed(x)"
+    },
+    {
+      "id": "papers",
+      "lo": 2,
+      "hi": 3,
+      "name": "papers",
+      "title": "Papers",
+      "op": "attention, main track"
+    },
+    {
+      "id": "workshops",
+      "lo": 4,
+      "hi": 5,
+      "name": "workshops",
+      "title": "Workshops and preprints",
+      "op": "many heads, one question"
+    },
+    {
+      "id": "companies",
+      "lo": 6,
+      "hi": 7,
+      "name": "companies",
+      "title": "Companies",
+      "op": "residual stream · things that compound"
+    },
+    {
+      "id": "projects",
+      "lo": 8,
+      "hi": 8,
+      "name": "projects",
+      "title": "Projects",
+      "op": "MLP · where the facts live"
+    },
+    {
+      "id": "experience",
+      "lo": 9,
+      "hi": 10,
+      "name": "experience",
+      "title": "Experience",
+      "op": "fine-tuning runs"
+    },
+    {
+      "id": "news",
+      "lo": 11,
+      "hi": 11,
+      "name": "news",
+      "title": "News",
+      "op": "training log, newest first"
+    },
+    {
+      "id": "failure",
+      "lo": 12,
+      "hi": 12,
+      "name": "failure modes",
+      "title": "Known failure modes",
+      "op": "read before collaborating"
+    },
+    {
+      "id": "head",
+      "lo": 13,
+      "hi": 13,
+      "name": "output head",
+      "title": "Output",
+      "op": "p(next step | you)"
+    }
+  ],
+  "notes": {
+    "news": "updates faster than my stock portfolio",
+    "failure": "all true, especially no. 1"
+  },
+  "researchIntro": "{count} peer-reviewed papers, including an ICML Spotlight, a TMLR journal paper and EMNLP. The A★ tag marks A* venues; * and † mark equal contribution.",
   "publications": [
     {
       "title": "Uncovering the Latent Potential of Deep Intermediate Representations",
@@ -338,7 +257,8 @@
         "openreview": "https://openreview.net/forum?id=6up1qGJwYZ",
         "code": "https://github.com/arnesh2212/loes"
       },
-      "summary": "LOES selects task-discriminative layer subspaces under orthogonality/isotropy constraints, with a geometric fine-tuning loss; gains over transfer baselines grow with depth."
+      "summary": "LOES selects task-discriminative layer subspaces under orthogonality/isotropy constraints, with a geometric fine-tuning loss; gains over transfer baselines grow with depth.",
+      "domain": "llm"
     },
     {
       "title": "Catching AI-Generated Code at Scale: A Lightweight and Interpretable Detector for the LLM Era",
@@ -352,7 +272,8 @@
         "paper": "https://aclanthology.org/2026.emnlp-industry.259/"
       },
       "summary": "NanoDroid, a 5.1M-parameter detector at 90.8% weighted F1, rivaling UniXcoder with about 25× fewer parameters.",
-      "note": "An earlier version appeared at ICML 2026 workshops."
+      "note": "An earlier version appeared at ICML 2026 workshops.",
+      "domain": "llm"
     },
     {
       "title": "M-SCAN: A Multistage Framework for Lumbar Spinal Canal Stenosis Grading Using Multi-View Cross Attention",
@@ -368,7 +289,8 @@
         "demo": "https://mscan.vercel.app/",
         "talk": "https://www.youtube.com/watch?v=bVLlfGIOBiI"
       },
-      "summary": "Automated MRI spinal-stenosis grading at 0.971 AUROC with YOLO detection and multi-view cross-attention."
+      "summary": "Automated MRI spinal-stenosis grading at 0.971 AUROC with YOLO detection and multi-view cross-attention.",
+      "domain": "bio"
     },
     {
       "title": "TOAM-YOLO: A Tiny Object-Aware Multi-Expert YOLO Framework for Diverse Domains",
@@ -381,7 +303,8 @@
       "links": {
         "openreview": "https://openreview.net/forum?id=2lIE1tgmRN"
       },
-      "summary": "Hessian-curvature and Fourier-frequency experts with three-level attention, plug-and-play on YOLOv11/v12; consistent mAP gains on five tiny-object and blood-cell benchmarks for only 0.75M extra parameters."
+      "summary": "Hessian-curvature and Fourier-frequency experts with three-level attention, plug-and-play on YOLOv11/v12; consistent mAP gains on five tiny-object and blood-cell benchmarks for only 0.75M extra parameters.",
+      "domain": "vision"
     },
     {
       "title": "When the Label Measures the Estimator: Threshold Leakage in Estimate-Scaled Evaluation Labels",
@@ -395,7 +318,8 @@
         "openreview": "https://openreview.net/forum?id=gJqq9RjLfv"
       },
       "summary": "When labels are scaled by an estimate, estimator error leaks into the label and manufactures ranking skill that is not there.",
-      "note": "Extended version under double-blind review."
+      "note": "Extended version under double-blind review.",
+      "domain": "market"
     },
     {
       "title": "Pretraining Buys Short-Horizon Direction: A Randomly-Initialized Control for Frozen Temporal Representations",
@@ -409,7 +333,8 @@
         "openreview": "https://openreview.net/forum?id=MsX8cuxxRm"
       },
       "summary": "An untrained twin matches a trained JEPA on volatility; pretraining adds only one to two hours of directional signal.",
-      "note": "Extended version under double-blind review."
+      "note": "Extended version under double-blind review.",
+      "domain": "market"
     },
     {
       "title": "The Wrong Clock for Transaction Streams: Why Equal-Time Windows Fail as Trading Thins",
@@ -422,7 +347,8 @@
       "links": {
         "openreview": "https://openreview.net/forum?id=kfitgafGIs"
       },
-      "summary": "A volume clock adds 5.1 points of direction accuracy over equal-time windows across 14 NASDAQ ITCH sessions."
+      "summary": "A volume clock adds 5.1 points of direction accuracy over equal-time windows across 14 NASDAQ ITCH sessions.",
+      "domain": "market"
     },
     {
       "title": "Monitoring a Volatility-Targeted Loss Limit: A Case Study in Estimator-Induced Miscalibration",
@@ -436,7 +362,8 @@
         "openreview": "https://openreview.net/forum?id=fyuj2Yuazx"
       },
       "summary": "Range-based volatility estimators breach a loss limit at 1.9× its design rate; test-martingale monitoring catches it.",
-      "note": "Extended version under double-blind review."
+      "note": "Extended version under double-blind review.",
+      "domain": "market"
     },
     {
       "title": "Do Scalar Summaries of Foundation-Model Embedding Geometry Improve Volatility Forecasting? A Calibrated, Leakage-Aware Audit",
@@ -450,7 +377,8 @@
         "openreview": "https://openreview.net/forum?id=nfgtvnMKLt"
       },
       "summary": "A deflation cascade shows that in-sample geometry signals survive certification under none of seven encoders.",
-      "note": "Extended version under double-blind review."
+      "note": "Extended version under double-blind review.",
+      "domain": "market"
     },
     {
       "title": "Faithful Is Not Interpretable: Sparse Features, Circuits, and Robustness in Frozen Audio Encoders",
@@ -463,7 +391,8 @@
       "links": {
         "paper": "https://mlforaudioworkshop.github.io/accepted_submissions_2026/CameraReadys%204-83/74/CameraReady/Faithful%20Is%20Not%20Interpretable_compressed.pdf"
       },
-      "summary": "SAEs and transcoders on seven audio encoders reach R² 0.998 yet correlate only 0.12 with monosemanticity."
+      "summary": "SAEs and transcoders on seven audio encoders reach R² 0.998 yet correlate only 0.12 with monosemanticity.",
+      "domain": "audio"
     },
     {
       "title": "Where to Read a Frozen Audio Encoder: Objective-Induced Geometry and Zero-Label Layer Selection",
@@ -476,7 +405,8 @@
       "links": {
         "paper": "https://mlforaudioworkshop.github.io/accepted_submissions_2026/CameraReadys%204-83/73/CameraReady/Where%20to%20Read%20a%20Frozen%20Audio%20Encoder.pdf"
       },
-      "summary": "Label-free layer selection recovers 24 to 38 points lost to final-layer readout and cuts low-resource ASR CER by up to 23.9%."
+      "summary": "Label-free layer selection recovers 24 to 38 points lost to final-layer readout and cuts low-resource ASR CER by up to 23.9%.",
+      "domain": "audio"
     },
     {
       "title": "Adaptive Trimodal Fusion for Mental-Health Symptom Classification in Memes",
@@ -489,7 +419,8 @@
       "links": {
         "openreview": "https://openreview.net/forum?id=FBbO2ML253"
       },
-      "summary": "A 1.7M-parameter trimodal head over frozen CLIP and MentalBART; 0.707 Macro-F1 on AxiOM with about 70× fewer trainable parameters."
+      "summary": "A 1.7M-parameter trimodal head over frozen CLIP and MentalBART; 0.707 Macro-F1 on AxiOM with about 70× fewer trainable parameters.",
+      "domain": "multimodal"
     },
     {
       "title": "Graph-Based Cross-Modal Learning for Drug-Target Affinity Prediction",
@@ -502,7 +433,8 @@
       "links": {
         "openreview": "https://openreview.net/forum?id=aakl14l0sJ"
       },
-      "summary": "A heterogeneous GNN fusing molecular and ESM-2 protein graphs; 14.95% lower MSE on KIBA cold-drug."
+      "summary": "A heterogeneous GNN fusing molecular and ESM-2 protein graphs; 14.95% lower MSE on KIBA cold-drug.",
+      "domain": "bio"
     },
     {
       "title": "DentalNet: Geometric Aware Multi-View Transformer for Occlusion Grade Prediction in Dental 3D Scans",
@@ -515,7 +447,8 @@
       "links": {
         "openreview": "https://openreview.net/forum?id=PpDLNxxeYQ"
       },
-      "summary": "2D/3D cross-attention over intraoral views and 3D scans for IOTN-DHC occlusion grading at 67% F1."
+      "summary": "2D/3D cross-attention over intraoral views and 3D scans for IOTN-DHC occlusion grading at 67% F1.",
+      "domain": "bio"
     },
     {
       "title": "SocialDF: Benchmark Dataset and Detection Model for Mitigating Harmful Deepfake Content on Social Media Platforms",
@@ -529,11 +462,12 @@
         "paper": "https://dl.acm.org/doi/10.1145/3733567.3735573",
         "talk": "https://www.youtube.com/watch?v=8i3ejDl3q_Q"
       },
-      "summary": "A real-world deepfake benchmark with a multi-agent LLM detector that integrates fact-checking."
+      "summary": "A real-world deepfake benchmark with a multi-agent LLM detector that integrates fact-checking.",
+      "domain": "vision"
     },
     {
       "title": "Who Convinced Whom? Tracing How LLMs Change Their Minds in Multi-Agent Systems",
-      "authors": "A. Batra, A. Khandelwal, J. Khemani, K. Thukral, A. Gumber, D. F. Lim, U. Kumar, P. X. Tan",
+      "authors": "A. Batra*, A. Khandelwal*, J. Khemani†, K. Thukral†, A. Gumber†, D. F. Lim, U. Kumar, P. X. Tan",
       "venue": "arXiv",
       "status": "Under double-blind review",
       "tier": "preprint",
@@ -541,74 +475,305 @@
       "links": {
         "paper": "https://arxiv.org/abs/2610.35930"
       },
-      "summary": "MAD Bench, 2,400 questions: multi-agent debate raises unanimous wrong answers by 3.1 to 7.4 points, and we trace who moved whom."
+      "summary": "MAD Bench, 2,400 questions: multi-agent debate raises unanimous wrong answers by 3.1 to 7.4 points, and we trace who moved whom.",
+      "domain": "llm"
     }
   ],
-  "founder": {
-    "kicker": "Co-Founder & Lead Researcher",
-    "name": "StarkVision",
-    "description": "A 20-member student AI/ML research collective at IIIT-Delhi. Our work spans an ICML 2026 Spotlight, a TMLR journal paper, EMNLP 2026 Industry Track, CVPR 2025 Demo Track and a run of ICML and NeurIPS workshop papers. I set research direction, design experiments and mentor juniors from idea to acceptance; I was technical lead on our NCIIPC AI Grand Challenge entry, which became NivionAI.",
-    "badges": [
-      "ICML 2026 Spotlight",
-      "TMLR",
-      "EMNLP 2026 Industry",
-      "CVPR 2025 Demo"
-    ]
-  },
-  "founderStats": [
+  "companies": [
     {
-      "value": "₹38L",
-      "label": "secured · ₹30L grants + ₹8L prizes (NCIIPC)"
+      "name": "NivionAI",
+      "role": "Co-Founder",
+      "dates": "Nov 2025 – now",
+      "domain": "vision",
+      "detail": "Few-shot satellite object detection under an **NDA with NCIIPC (NTRO), Government of India**. It grew out of our **Top 3** finish among 670+ startups in the NCIIPC AI Grand Challenge.",
+      "stats": [
+        {
+          "value": "₹38L",
+          "label": "secured · ₹30L grants + ₹8L prizes (NCIIPC)"
+        },
+        {
+          "value": "Top 3",
+          "label": "in PS-03 of 670+ nationwide · Stage 2 cleared"
+        }
+      ]
     },
     {
-      "value": "Top 3",
-      "label": "in PS-03 of 670+ nationwide · Stage 2 cleared"
+      "name": "StarkVision",
+      "role": "Co-Founder & Lead Researcher",
+      "dates": "Aug 2024 – now",
+      "domain": "llm",
+      "detail": "A 20-member student AI/ML research collective at IIIT-Delhi. Our work spans an ICML 2026 Spotlight, a TMLR journal paper, EMNLP 2026 Industry Track, CVPR 2025 Demo Track and a run of ICML and NeurIPS workshop papers. I set research direction, design experiments and mentor juniors from idea to acceptance; I was technical lead on our NCIIPC AI Grand Challenge entry, which became NivionAI.",
+      "badges": [
+        "ICML 2026 Spotlight",
+        "TMLR",
+        "EMNLP 2026 Industry",
+        "CVPR 2025 Demo"
+      ],
+      "stats": [
+        {
+          "value": "20",
+          "label": "members in the collective"
+        },
+        {
+          "value": "10+",
+          "label": "juniors mentored to publication"
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "sat",
+      "kicker": "Vision · Gov. AI Challenge · now NivionAI",
+      "title": "Few-Shot Visual Search in Satellite Imagery",
+      "subtitle": "NCIIPC Startup India AI Grand Challenge (PS-03)",
+      "problem": "Locate rare, tiny targets (<0.1% of image) from a handful of labels.",
+      "built": "A multi-stage detect-then-verify pipeline: weak-label expansion, ensembled detection, and feature/geometry verification to kill false positives.",
+      "metricValue": "+35% mAP",
+      "metricLabel": "over baseline · Top 3 of 670+ · Stage 2 cleared · ₹38L",
+      "tags": [
+        "Few-Shot",
+        "Detection",
+        "Satellite",
+        "Retrieval"
+      ],
+      "links": {},
+      "domain": "vision"
     },
     {
-      "value": "20",
-      "label": "members in the collective"
+      "id": "rank",
+      "kicker": "Financial Markets",
+      "title": "LangGraph Multi-Agent Stock Reranker",
+      "subtitle": "Implicit-feedback collaborative filtering for weekly equity ranking",
+      "problem": "Rank weekly Indian equities as regimes shift and signals decay.",
+      "built": "A bounded LangGraph multi-agent reranker over a tuned blend of 7 expert rankers, with LLM sub-agents injecting macro, news and fundamentals.",
+      "metricValue": "+22.51%",
+      "metricLabel": "cumulative · Sharpe 1.45 · beat Nifty 50 in 28/41 wks",
+      "tags": [
+        "Quant",
+        "LangGraph",
+        "Multi-Agent",
+        "Learn-to-Rank"
+      ],
+      "links": {
+        "preprint": "https://drive.google.com/file/d/1YUOSAEDwx0VHwnmYGBABRjqN9IYPocAE/view?usp=sharing"
+      },
+      "domain": "market"
     },
     {
-      "value": "10+",
-      "label": "juniors mentored to publication"
+      "id": "hft",
+      "kicker": "Financial Markets · In development",
+      "title": "Algorithmic Trading System",
+      "subtitle": "NSE tick data · Kite API · in development",
+      "problem": "Trade NSE intraday in real time, from signal to execution to monitoring.",
+      "built": "LSTM/Transformer forecasters on tick data with sentiment features, Kite API execution and a live monitoring dashboard, handling 1,000+ ticks per second.",
+      "metricValue": "1k+ ticks/s",
+      "metricLabel": "LSTM/Transformer · Kite API · live dashboard",
+      "tags": [
+        "Quant",
+        "Time-Series",
+        "Execution"
+      ],
+      "links": {},
+      "domain": "market"
+    },
+    {
+      "id": "droid",
+      "kicker": "Robotics · World Models",
+      "title": "DroidPlanner: JEPA World Model",
+      "subtitle": "Multi-step latent consistency & spatial aggregation for planning",
+      "problem": "Plan offline, goal-conditioned, from latent dynamics, stably.",
+      "built": "Extended LeWM-style JEPA with a K=3 latent-consistency loss and a PatchSpatialAggregator restoring ViT patch info via gated pyramid fusion.",
+      "metricValue": "85.0±1.15",
+      "metricLabel": "DMControl Reacher · 4.6× variance contraction · ~3% params",
+      "tags": [
+        "JEPA",
+        "Planning",
+        "Self-Supervised"
+      ],
+      "links": {
+        "preprint": "https://drive.google.com/file/d/1UarPLUdkPoJXkTfVJI1n8sCsYnv4r_8T/view?usp=sharing"
+      },
+      "domain": "robotics"
+    },
+    {
+      "id": "redact",
+      "kicker": "Multimodal · Privacy",
+      "title": "REDACT: Data Privacy Platform",
+      "subtitle": "Smart India Hackathon 2024 · Top 2 / 100+",
+      "problem": "Redact PII across text, images and documents reliably.",
+      "built": "A multimodal redaction engine with BERT-based NLP and few-shot domain adaptation for legal/medical docs, behind a secure pipeline.",
+      "metricValue": "99%",
+      "metricLabel": "detection accuracy · national finalist",
+      "tags": [
+        "Multimodal",
+        "NLP",
+        "PII"
+      ],
+      "links": {
+        "code": "https://github.com/ArushGumber/TrueSight",
+        "demo": "https://www.youtube.com/watch?v=-Awr0FBJfjY"
+      },
+      "domain": "multimodal"
+    },
+    {
+      "id": "amazon",
+      "kicker": "Multimodal · Competition",
+      "title": "Multimodal Price Prediction",
+      "subtitle": "Amazon ML Challenge 2025 · Rank 54 / 20,000+",
+      "problem": "Predict product price from image + text without price lookups.",
+      "built": "Fused CLIP ViT-B/32 and DINOv2 visual embeddings with TF-IDF text via cross-attention; global embedding caches for 5× inference speedup.",
+      "metricValue": "54 / 20k",
+      "metricLabel": "42.39 SMAPE · top 0.3%",
+      "tags": [
+        "CLIP",
+        "DINOv2",
+        "Cross-Attention"
+      ],
+      "links": {
+        "code": "https://github.com/ArushGumber/AmazonMlChallenge"
+      },
+      "domain": "multimodal"
+    },
+    {
+      "id": "underwater",
+      "kicker": "Audio · Bioacoustics",
+      "title": "Underwater Acoustic Event Detection",
+      "subtitle": "Unified framework · manuscript in preparation",
+      "problem": "Assess biodiversity and vessel activity from long marine soundscapes.",
+      "built": "Standardized multiple marine acoustic datasets and a joint detection framework over long-duration audio.",
+      "metricValue": "in prep",
+      "metricLabel": "time-series · signal processing",
+      "tags": [
+        "Bioacoustics",
+        "Time-Series",
+        "Audio"
+      ],
+      "links": {},
+      "domain": "audio"
+    },
+    {
+      "id": "musicbind",
+      "kicker": "Cross-Modal · Retrieval",
+      "title": "MusicBind: Cross-Modal Song Retrieval",
+      "subtitle": "Research prototype",
+      "problem": "Align audio, text, image and graph in one space for retrieval.",
+      "built": "A PyTorch cross-modal system in a hyperbolic embedding space with GNNs, evaluated on GTZAN.",
+      "metricValue": "4-modal",
+      "metricLabel": "hyperbolic embeddings · GNN",
+      "tags": [
+        "Cross-Modal",
+        "Hyperbolic",
+        "GNN"
+      ],
+      "links": {
+        "code": "https://github.com/arnesh2212/Image2Song"
+      },
+      "domain": "audio"
+    },
+    {
+      "id": "riscv",
+      "kicker": "CS Fundamentals · Architecture",
+      "title": "Custom RISC-V Assembler & Simulator",
+      "subtitle": "RV32I ISA · course project (Prof. Sujay Deb)",
+      "problem": "Assemble and execute the full RV32I instruction set, correctly.",
+      "built": "A complete assembler and simulator with full instruction encoding, memory management and a CI/CD pipeline.",
+      "metricValue": "95%",
+      "metricLabel": "test coverage · RV32I ISA · CI/CD",
+      "tags": [
+        "RISC-V",
+        "Systems",
+        "Architecture",
+        "CI/CD"
+      ],
+      "links": {
+        "code": "https://github.com/ArushGumber/Assembler"
+      },
+      "domain": "cs"
+    },
+    {
+      "id": "bidbazar",
+      "kicker": "CS Fundamentals · Databases",
+      "title": "BidBazar: Real-time Auction Platform",
+      "subtitle": "Concurrent bidding · course project (Prof. Mukesh Mohania)",
+      "problem": "Resolve concurrent bids for 1000+ users without races.",
+      "built": "A real-time auction platform with SQL-optimized bid resolution, auto-bidding and sniping protection.",
+      "metricValue": "1000+",
+      "metricLabel": "concurrent users · SQL-optimized resolution",
+      "tags": [
+        "Full-Stack",
+        "SQL",
+        "Concurrency"
+      ],
+      "links": {
+        "code": "https://github.com/ArushGumber/BidBazaar"
+      },
+      "domain": "cs"
+    },
+    {
+      "id": "marvelbirds",
+      "kicker": "CS Fundamentals · OOP & Engines",
+      "title": "Marvel Birds: Game Engine",
+      "subtitle": "Physics engine · course project (Prof. Sambuddho Chakravarty)",
+      "problem": "Build a 2D physics engine with clean, extensible architecture.",
+      "built": "A LibGDX and Box2D physics engine with collision detection, using Factory and Observer design patterns.",
+      "metricValue": "LibGDX",
+      "metricLabel": "physics · collisions · Factory/Observer",
+      "tags": [
+        "OOP",
+        "Game Engine",
+        "Design Patterns"
+      ],
+      "links": {
+        "code": "https://github.com/ArushGumber/SOTA_AP_project",
+        "demo": "https://youtu.be/BgPh7yGTrvE"
+      },
+      "domain": "cs"
     }
   ],
   "experience": [
     {
-      "kicker": "Research · Aug 2026 – now",
       "title": "Research Intern, SHIBA AI (Tokyo, remote)",
       "detail": "AI safety and mechanistic interpretability: representation-level analysis of multimodal LLMs and interventions on information flow in multi-agent debate, with Prof. Phan Xuan Tan.",
-      "link": "https://www.shiba-ai.jp/team/arush-gumber"
+      "link": "https://www.shiba-ai.jp/team/arush-gumber",
+      "kind": "Research",
+      "dates": "Aug 2026 – now",
+      "domain": "llm"
     },
     {
-      "kicker": "Founder · Nov 2025 – now",
-      "title": "Co-Founder, NivionAI",
-      "detail": "Few-shot satellite object detection under an NDA with NCIIPC (NTRO), Government of India. Grew out of our Top 3 finish in the AI Grand Challenge."
-    },
-    {
-      "kicker": "Industry · Jun – Aug 2026",
       "title": "Machine Learning Engineer Intern, S&P Global",
-      "detail": "Built an M-BERT document-relevance model for Capital IQ Pro and used LOES to pick intermediate layers; Industry Fundamentals F1 went from 40% to 90%."
+      "detail": "Built an M-BERT document-relevance model for Capital IQ Pro and used LOES to pick intermediate layers; Industry Fundamentals F1 went from 40% to 90%.",
+      "kind": "Industry",
+      "dates": "Jun – Aug 2026",
+      "domain": "llm"
     },
     {
-      "kicker": "Research · Apr 2026 – now",
       "title": "Research Collaborator, University of Vienna",
-      "detail": "With Prof. Dagmar Gromann (remote) on knowledge-graph representation learning and parameter-efficient fine-tuning."
+      "detail": "With Prof. Dagmar Gromann (remote) on knowledge-graph representation learning and parameter-efficient fine-tuning.",
+      "kind": "Research",
+      "dates": "Apr 2026 – now",
+      "domain": "graph"
     },
     {
-      "kicker": "Research · Dec 2024 – now",
       "title": "Research Intern, Infosys Centre for AI (SBILab), IIIT-Delhi",
-      "detail": "With Prof. Anubha Gupta, my thesis advisor: representation learning, multimodal fusion and robust visual recognition. LOES, TOAM-YOLO, DentalNet and drug-target affinity came out of here."
+      "detail": "With Prof. Anubha Gupta, my thesis advisor: representation learning, multimodal fusion and robust visual recognition. LOES, TOAM-YOLO, DentalNet and drug-target affinity came out of here.",
+      "kind": "Research",
+      "dates": "Dec 2024 – now",
+      "domain": "vision"
     },
     {
-      "kicker": "Teaching · Jan – May 2026",
       "title": "Teaching Assistant, Machine Learning",
-      "detail": "120-student cohort (PhD, MTech, BTech) under Prof. Anubha Gupta: assignments, Kaggle competitions, office hours."
+      "detail": "120-student cohort (PhD, MTech, BTech) under Prof. Anubha Gupta: assignments, Kaggle competitions, office hours.",
+      "kind": "Teaching",
+      "dates": "Jan – May 2026",
+      "domain": "cs"
     },
     {
-      "kicker": "Research · Feb – Apr 2025",
       "title": "Computational Biology, UC San Diego",
-      "detail": "With Prof. Pengtao Xie (remote): fine-tuned Geneformer and built RNA-seq pipelines for diabetic phenotype classification."
+      "detail": "With Prof. Pengtao Xie (remote): fine-tuned Geneformer and built RNA-seq pipelines for diabetic phenotype classification.",
+      "kind": "Research",
+      "dates": "Feb – Apr 2025",
+      "domain": "bio"
     }
   ],
   "news": [
@@ -715,30 +880,28 @@
       "detail": "A 20-member student AI/ML research collective at IIIT-Delhi."
     }
   ],
-  "about": {
-    "headline": [
-      {
-        "text": "Somewhere between "
-      },
-      {
-        "text": "Richard Hendricks",
-        "tone": "accent"
-      },
-      {
-        "text": " and "
-      },
-      {
-        "text": "Sheldon Cooper",
-        "tone": "accent"
-      },
-      {
-        "text": "."
-      }
-    ],
-    "bio": "I work on what deep models actually learn, and on making that useful and trustworthy on real data: vision, language, audio, medicine and especially markets and data that arrives over time. I have traded markets since I was 16, which is probably why I distrust any backtest that looks too good.",
-    "credentials": "Computer Science and Artificial Intelligence at IIIT-Delhi · GPA 8.91/10 · 2023–2027 · thesis with Prof. Anubha Gupta (SBILab) · research intern at SHIBA AI · collaborating with the University of Vienna · previously ML intern at S&P Global."
-  },
-  "researchIntro": "{count} peer-reviewed papers, including an ICML Spotlight, a TMLR journal paper and EMNLP. The A★ tag marks A* venues.",
+  "failureModes": [
+    {
+      "title": "The founder treats sleep as a hyperparameter.",
+      "detail": "Tuned per deadline; rarely converges to eight hours."
+    },
+    {
+      "title": "He will ask for the untrained baseline.",
+      "detail": "Several of his papers exist because a randomly initialized twin did suspiciously well."
+    },
+    {
+      "title": "Exposure to financial markets since age 16.",
+      "detail": "Past performance is not indicative of future results. He will remind you of this about your backtest."
+    },
+    {
+      "title": "Overfits to hard problems.",
+      "detail": "Easy ones get delegated. Hard ones get worked on until they crack, usually around 4 a.m."
+    },
+    {
+      "title": "Excessive equal contribution.",
+      "detail": "Asterisks and daggers appear frequently. They are earned."
+    }
+  ],
   "skills": {
     "Languages": [
       "Python",
@@ -779,18 +942,88 @@
     "Operating Systems",
     "DBMS"
   ],
-  "workIntro": [
-    {
-      "text": "The domain changes.",
-      "tone": "ink"
-    },
-    {
-      "text": "The underlying game",
-      "tone": "dim"
-    },
-    {
-      "text": "usually doesn't.",
-      "tone": "accent-italic"
+  "contact": {
+    "headline": "Bring a difficult problem.",
+    "lede": "A research lab, a quant desk and a startup garage, sharing one brain. Reviewing for a venue, hiring, or building something ambitious? Let's talk.",
+    "softmax": [
+      [
+        "research collab",
+        0.36
+      ],
+      [
+        "founding team",
+        0.33
+      ],
+      [
+        "quant role",
+        0.31
+      ]
+    ],
+    "signature": {
+      "name": "Arush Gumber",
+      "label": "signed off at the output head"
     }
-  ]
+  },
+  "embedding": {
+    "button": "expand the embedding: where it all points",
+    "goal": "the long-term goal",
+    "caption": "Every paper, company, project and role, drawn as a vector. At L0 they look like nine different careers. Run the forward pass: layer by layer they **align and grow**, and by the head they read **one direction**."
+  },
+  "domains": [
+    {
+      "id": "vision",
+      "label": "Vision",
+      "color": "#1f3fd1"
+    },
+    {
+      "id": "multimodal",
+      "label": "Multimodal",
+      "color": "#4a6cf0"
+    },
+    {
+      "id": "audio",
+      "label": "Audio",
+      "color": "#0a8a64"
+    },
+    {
+      "id": "llm",
+      "label": "Language & agents",
+      "color": "#7a2ef0"
+    },
+    {
+      "id": "market",
+      "label": "Markets & time series",
+      "color": "#e2401c"
+    },
+    {
+      "id": "bio",
+      "label": "Medicine & biology",
+      "color": "#c48500"
+    },
+    {
+      "id": "graph",
+      "label": "Graphs",
+      "color": "#9a3412"
+    },
+    {
+      "id": "robotics",
+      "label": "Robotics",
+      "color": "#0e7490"
+    },
+    {
+      "id": "cs",
+      "label": "Systems",
+      "color": "#4a4740"
+    }
+  ],
+  "footer": "This state was not represented in the training distribution.",
+  "gallery": {
+    "open": "show conference samples",
+    "close": "hide conference samples",
+    "subtitle": "CVPR 2025 · ICML 2026",
+    "personalTitle": "off the clock"
+  },
+  "stamp": {
+    "title": "Updated"
+  }
 }

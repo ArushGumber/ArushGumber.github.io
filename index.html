@@ -4,192 +4,50 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Arush Gumber · Researcher · Engineer · Founder</title>
-  <meta name="description" content="Arush Gumber. ML and deep-learning researcher, engineer and founder at IIIT-Delhi, reading the geometry of representations across vision, audio, graphs and markets.">
+  <meta name="description" content="Arush Gumber. ML researcher, engineer and founder at IIIT-Delhi: what deep models learn, honest evaluation, and ML for markets. ICML 2026 Spotlight, TMLR, EMNLP 2026.">
   <meta name="author" content="Arush Gumber">
   <link rel="canonical" href="https://arushgumber.com/">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://arushgumber.com/">
   <meta property="og:title" content="Arush Gumber · Researcher · Engineer · Founder">
-  <meta property="og:description" content="ML and deep-learning researcher, engineer and founder. Somewhere between Richard Hendricks and Sheldon Cooper.">
-  <meta property="og:image" content="https://arushgumber.com/images/profile.jpg">
-  <meta name="theme-color" content="#0a0908">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230a0908'/%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%23c6a05f' stroke-width='3'/%3E%3Ccircle cx='16' cy='16' r='3.5' fill='%23c6a05f'/%3E%3C/svg%3E">
+  <meta property="og:description" content="Somewhere between Richard Hendricks and Sheldon Cooper.">
+  <meta property="og:image" content="https://arushgumber.com/images/nyse.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#f3efe6">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23121110'/%3E%3Cpath d='M7 24 L24 8' stroke='%23f3efe6' stroke-width='3' stroke-linecap='square'/%3E%3Cpath d='M15 8 H24 V17' fill='none' stroke='%23e2401c' stroke-width='3'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,500;0,600;0,700;0,800;0,900;1,700&family=JetBrains+Mono:wght@400;500;700&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <div id="top">
+  <a class="skip" href="#main">Skip to content</a>
 
-    <nav class="nav">
-      <div class="nav-inner">
-        <a href="#top" class="brand" data-close-menu>
-          <span class="brand-ring"></span>
-          <span class="brand-name">Arush Gumber</span>
-          <span class="brand-tag">researcher · engineer · founder</span>
-        </a>
-        <div class="nav-links">
-          <a href="#research" class="nav-link">Research</a>
-          <a href="#work" class="nav-link">Work</a>
-          <a href="#experience" class="nav-link">Experience</a>
-          <a href="#news" class="nav-link">News</a>
-          <a href="#stack" class="nav-link">Stack</a>
-          <a href="#contact" class="nav-cta">Contact</a>
-        </div>
-        <span class="updated" id="updated"></span>
-        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu" data-toggle-menu>
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-      <div class="mobile-menu" id="mobile-menu">
-        <a href="#research" class="mobile-link" data-close-menu>Research</a>
-        <a href="#work" class="mobile-link" data-close-menu>Work</a>
-        <a href="#experience" class="mobile-link" data-close-menu>Experience</a>
-        <a href="#news" class="mobile-link" data-close-menu>News</a>
-        <a href="#stack" class="mobile-link" data-close-menu>Stack</a>
-        <a href="#contact" class="mobile-link cta" data-close-menu>Contact →</a>
-      </div>
-    </nav>
+  <header class="top">
+    <a class="brand" href="#input"><b id="brand-name"></b><span id="brand-tag"></span></a>
+    <div class="top-right">
+      <nav class="top-nav" id="top-nav" aria-label="Sections"></nav>
+      <span class="stamp" id="stamp" role="note"><b id="stamp-date"></b><small id="stamp-ckpt"></small></span>
+    </div>
+  </header>
 
-    <header class="hero" id="hero">
-      <canvas class="hero-canvas" id="instrument" aria-hidden="true"></canvas>
-      <div class="hero-fallback" aria-hidden="true"></div>
-      <div class="hero-scrim" aria-hidden="true"></div>
+  <aside class="rail" aria-label="Depth">
+    <div class="rail-title">DEPTH</div>
+    <div class="ticks" id="ticks"><div class="ticks-fill" id="ticks-fill"></div></div>
+    <canvas class="mini" id="mini" width="64" height="64" aria-hidden="true"></canvas>
+  </aside>
 
-      <div class="hero-body">
-        <div class="hero-top">
-          <div class="status">
-            <span class="status-dot"></span>
-            <span id="status-text">warming up the field…</span>
-          </div>
-        </div>
-
-        <div class="hero-mid">
-          <div class="hero-copy">
-            <div class="role-line" id="role-line"></div>
-            <h1 class="about-headline" id="about-headline"></h1>
-            <p class="hero-bio" id="hero-bio"></p>
-            <p class="hero-cred" id="hero-cred"></p>
-            <div class="hero-ctas">
-              <a href="#research" class="cta cta-primary">Read the research →</a>
-              <a href="#work" class="cta cta-secondary">Enter the work →</a>
-            </div>
-          </div>
-
-          <figure class="portrait">
-            <figcaption class="portrait-cap-top">subject · A. Gumber</figcaption>
-            <div class="portrait-frame">
-              <img src="images/profile.jpg" alt="Portrait of Arush Gumber" width="320" height="427" loading="eager">
-              <div class="portrait-duotone"></div>
-              <div class="portrait-scanwrap"><div class="portrait-scan"></div></div>
-              <span class="tick-tl"></span>
-              <span class="tick-br"></span>
-            </div>
-            <div class="portrait-cap-bot"><span>IIIT-DELHI</span><span>fig.01 · live</span></div>
-          </figure>
-        </div>
-
-        <div class="hero-domains">
-          <div class="hero-domains-head">
-            <span class="domains-label">Domains · hover to retune · click to isolate work</span>
-            <span class="readout" id="readout">idle · an evolving latent manifold</span>
-          </div>
-          <div class="domains-row" id="domains-row" role="group" aria-label="Research domains"></div>
-        </div>
-      </div>
-    </header>
-
-    <section class="research" id="research">
-      <div class="wrap">
-        <div class="head-grid">
-          <div>
-            <div class="eyebrow">§ 01 · Research</div>
-            <h2 class="section-h2">Spatial publication archive</h2>
-          </div>
-          <div class="section-intro" id="research-intro"></div>
-        </div>
-        <div id="pub-groups"></div>
-      </div>
-    </section>
-
-    <section class="work" id="work">
-      <div class="wrap">
-        <div class="head-grid">
-          <div>
-            <div class="eyebrow">§ 02 · Selected work</div>
-            <h2 class="section-h2">Case files</h2>
-          </div>
-          <div class="work-intro" id="work-intro"></div>
-        </div>
-        <div class="filters-label">Choose your problem space</div>
-        <div class="filters" id="filters"></div>
-        <div id="cases"></div>
-      </div>
-    </section>
-
-    <section class="build" id="experience">
-      <div class="wrap">
-        <div class="eyebrow">§ 03 · Work experience</div>
-        <h2 class="build-h2">Curious enough for research. Fast enough for product. <span class="accent">Serious enough for capital.</span></h2>
-
-        <div class="founder-card">
-          <div class="founder-grid">
-            <div class="founder-main">
-              <div class="founder-kicker" id="founder-kicker"></div>
-              <h3 class="founder-name" id="founder-name"></h3>
-              <p class="founder-desc" id="founder-desc"></p>
-              <div class="badges" id="founder-badges"></div>
-            </div>
-            <div class="founder-stats" id="founder-stats"></div>
-          </div>
-        </div>
-
-        <div class="build-cards" id="experience-cards"></div>
-      </div>
-    </section>
-
-    <section class="news" id="news">
-      <div class="wrap">
-        <div class="eyebrow">§ 04 · News</div>
-        <h2 class="news-h2">A living timeline</h2>
-        <div class="timeline" id="timeline"></div>
-      </div>
-    </section>
-
-    <section class="about" id="stack">
-      <div class="wrap">
-        <div class="eyebrow">§ 05 · Stack</div>
-        <h2 class="section-h2">The toolkit</h2>
-        <div class="stack-groups" id="stack-groups"></div>
-      </div>
-    </section>
-
-    <section class="contact" id="contact">
-      <div class="contact-inner">
-        <div class="eyebrow">§ 06 · Contact</div>
-        <h2 class="contact-h2">Bring a difficult problem.</h2>
-        <p class="contact-para">A research lab, a quant desk and a startup garage, sharing one brain. Reviewing for a venue, hiring, or building something ambitious? Let's talk.</p>
-        <div class="contact-actions">
-          <button class="email-btn" type="button" id="email-btn"></button>
-          <span id="socials"></span>
-        </div>
-        <div class="availability">
-          <span class="avail-dot"></span>Open to research collaborations, quant roles &amp; founding-team conversations
-        </div>
-      </div>
-      <div class="footer">
-        <div class="footer-inner">
-          <span>© <span id="year"></span> Arush Gumber · IIIT-Delhi</span>
-          <span>This state was not represented in the training distribution.</span>
-        </div>
-      </div>
-    </section>
-
+  <div class="progress" aria-hidden="true">
+    <span id="progress-layer"></span>
+    <span id="progress-name"></span>
+    <span class="progress-fill" id="progress-fill"></span>
   </div>
 
-  <script src="js/three.min.js"></script>
-  <script src="js/instrument.js"></script>
+  <main id="main"></main>
+
+  <noscript><p class="noscript">This site renders from data/content.json and needs JavaScript.</p></noscript>
+
+  <script src="js/figure.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>
