@@ -1,9 +1,11 @@
 {
+  "updated": "2026-11-03",
   "profile": {
     "name": "Arush Gumber",
     "navTagline": "researcher · engineer · founder",
     "roleLine": "Researcher, engineer, founder · in that order, depending on the day",
     "email": "arush23136@iiitd.ac.in",
+    "self": "A. Gumber",
     "links": {
       "website": "https://arushgumber.com/",
       "scholar": "https://scholar.google.com/citations?user=9qjHhXkAAAAJ&hl=en",
@@ -92,6 +94,26 @@
   ],
   "projects": [
     {
+      "id": "sat",
+      "domains": [
+        "vision"
+      ],
+      "kicker": "Vision · Gov. AI Challenge · now NivionAI",
+      "title": "Few-Shot Visual Search in Satellite Imagery",
+      "subtitle": "NCIIPC Startup India AI Grand Challenge (PS-03)",
+      "problem": "Locate rare, tiny targets (<0.1% of image) from a handful of labels.",
+      "built": "A multi-stage detect-then-verify pipeline: weak-label expansion, ensembled detection, and feature/geometry verification to kill false positives.",
+      "metricValue": "+35% mAP",
+      "metricLabel": "over baseline · Top 3 of 670+ · Stage 2 cleared · ₹38L",
+      "tags": [
+        "Few-Shot",
+        "Detection",
+        "Satellite",
+        "Retrieval"
+      ],
+      "links": {}
+    },
+    {
       "id": "rank",
       "domains": [
         "market"
@@ -102,7 +124,7 @@
       "problem": "Rank weekly Indian equities as regimes shift and signals decay.",
       "built": "A bounded LangGraph multi-agent reranker over a tuned blend of 7 expert rankers, with LLM sub-agents injecting macro, news and fundamentals.",
       "metricValue": "+22.51%",
-      "metricLabel": "cumulative · Sharpe 1.45 · beat Nifty50 in 28/41 wks",
+      "metricLabel": "cumulative · Sharpe 1.45 · beat Nifty 50 in 28/41 wks",
       "tags": [
         "Quant",
         "LangGraph",
@@ -110,7 +132,7 @@
         "Learn-to-Rank"
       ],
       "links": {
-        "preprint": "https://drive.google.com/file/d/1t3D6xPo8SCx6kPFmeeA19tbnHvR2aVpc/view?usp=sharing"
+        "preprint": "https://drive.google.com/file/d/1YUOSAEDwx0VHwnmYGBABRjqN9IYPocAE/view?usp=sharing"
       }
     },
     {
@@ -119,17 +141,16 @@
         "market"
       ],
       "kicker": "Financial Markets · In development",
-      "title": "High-Frequency Algorithmic Trading System",
-      "subtitle": "Real-time NSE execution & monitoring · in development",
+      "title": "Algorithmic Trading System",
+      "subtitle": "NSE tick data · Kite API · in development",
       "problem": "Trade NSE intraday in real time, from signal to execution to monitoring.",
-      "built": "A real-time platform with LSTM/Transformer forecasters on NSE data, Kite API execution, a sentiment-analysis pipeline and a Streamlit monitoring dashboard.",
-      "metricValue": "in dev",
+      "built": "LSTM/Transformer forecasters on tick data with sentiment features, Kite API execution and a live monitoring dashboard, handling 1,000+ ticks per second.",
+      "metricValue": "1k+ ticks/s",
       "metricLabel": "LSTM/Transformer · Kite API · live dashboard",
       "tags": [
         "Quant",
         "Time-Series",
-        "Execution",
-        "Streamlit"
+        "Execution"
       ],
       "links": {}
     },
@@ -153,26 +174,6 @@
       "links": {
         "preprint": "https://drive.google.com/file/d/1UarPLUdkPoJXkTfVJI1n8sCsYnv4r_8T/view?usp=sharing"
       }
-    },
-    {
-      "id": "sat",
-      "domains": [
-        "vision"
-      ],
-      "kicker": "Vision · Gov. AI Challenge",
-      "title": "Few-Shot Visual Search in Satellite Imagery",
-      "subtitle": "NCIIPC Startup India AI Grand Challenge (PS-03)",
-      "problem": "Locate rare, tiny targets (<0.1% of image) from a handful of labels.",
-      "built": "A multi-stage detect-then-verify pipeline: weak-label expansion, ensembled detection, and feature/geometry verification to kill false positives.",
-      "metricValue": "+35% mAP",
-      "metricLabel": "over baseline · Top 3 in PS-03 · Stage 2 cleared · ₹38L",
-      "tags": [
-        "Few-Shot",
-        "Detection",
-        "Satellite",
-        "Retrieval"
-      ],
-      "links": {}
     },
     {
       "id": "redact",
@@ -288,7 +289,7 @@
       "title": "BidBazar: Real-time Auction Platform",
       "subtitle": "Concurrent bidding · course project (Prof. Mukesh Mohania)",
       "problem": "Resolve concurrent bids for 1000+ users without races.",
-      "built": "A real-time auction platform with SQL-optimized bid resolution and ML-based price forecasting.",
+      "built": "A real-time auction platform with SQL-optimized bid resolution, auto-bidding and sniping protection.",
       "metricValue": "1000+",
       "metricLabel": "concurrent users · SQL-optimized resolution",
       "tags": [
@@ -309,7 +310,7 @@
       "title": "Marvel Birds: Game Engine",
       "subtitle": "Physics engine · course project (Prof. Sambuddho Chakravarty)",
       "problem": "Build a 2D physics engine with clean, extensible architecture.",
-      "built": "A LibGDX physics engine with collision detection, using Factory and Observer design patterns.",
+      "built": "A LibGDX and Box2D physics engine with collision detection, using Factory and Observer design patterns.",
       "metricValue": "LibGDX",
       "metricLabel": "physics · collisions · Factory/Observer",
       "tags": [
@@ -326,23 +327,38 @@
   "publications": [
     {
       "title": "Uncovering the Latent Potential of Deep Intermediate Representations",
+      "authors": "A. Batra, A. Gumber*, A. Khandelwal*, J. Khemani, A. Gupta",
       "venue": "ICML 2026",
       "status": "Spotlight",
-      "authorship": "Co-author",
       "tier": "conference",
       "year": 2026,
       "astar": true,
       "links": {
         "paper": "https://arxiv.org/abs/2605.23033",
+        "openreview": "https://openreview.net/forum?id=6up1qGJwYZ",
         "code": "https://github.com/arnesh2212/loes"
       },
       "summary": "LOES selects task-discriminative layer subspaces under orthogonality/isotropy constraints, with a geometric fine-tuning loss; gains over transfer baselines grow with depth."
     },
     {
-      "title": "MSCAN: Multistage Spinal Canal Stenosis Grading Using Cross-Attention",
-      "venue": "CVPR 2025 Demo",
-      "status": "Accepted",
-      "authorship": null,
+      "title": "Catching AI-Generated Code at Scale: A Lightweight and Interpretable Detector for the LLM Era",
+      "authors": "A. Batra, K. Thukral, D. Sharma*, A. Khandelwal*, A. Gumber*",
+      "venue": "EMNLP 2026",
+      "status": "Industry Track",
+      "tier": "conference",
+      "year": 2026,
+      "astar": true,
+      "links": {
+        "paper": "https://aclanthology.org/2026.emnlp-industry.259/"
+      },
+      "summary": "NanoDroid, a 5.1M-parameter detector at 90.8% weighted F1, rivaling UniXcoder with about 25× fewer parameters.",
+      "note": "An earlier version appeared at ICML 2026 workshops."
+    },
+    {
+      "title": "M-SCAN: A Multistage Framework for Lumbar Spinal Canal Stenosis Grading Using Multi-View Cross Attention",
+      "authors": "A. Batra, A. Gumber, A. Kumar",
+      "venue": "CVPR 2025",
+      "status": "Demo Track",
       "tier": "conference",
       "year": 2025,
       "astar": true,
@@ -355,112 +371,188 @@
       "summary": "Automated MRI spinal-stenosis grading at 0.971 AUROC with YOLO detection and multi-view cross-attention."
     },
     {
-      "title": "DentalNet: Geometric-Aware Multi-View Transformer for Dental 3D Scan Analysis",
-      "venue": "NeurIPS 2025 WS",
-      "status": "Accepted",
-      "authorship": "Co-First Author",
-      "tier": "workshop",
-      "year": 2025,
-      "links": {
-        "paper": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=9qjHhXkAAAAJ&citation_for_view=9qjHhXkAAAAJ:9yKSN-GCB0IC"
-      },
-      "summary": "2D/3D fusion at 67% F1; cross-attention integrates intraoral views with 3D point clouds for IOTN-DHC classification.",
-      "astar": true
-    },
-    {
-      "title": "Scalable and Interpretable Detection of LLM-Generated Code",
-      "venue": "ICML 2026 Workshops",
-      "status": "Accepted",
-      "authorship": null,
-      "tier": "workshop",
+      "title": "TOAM-YOLO: A Tiny Object-Aware Multi-Expert YOLO Framework for Diverse Domains",
+      "authors": "V. Sharma*, A. Batra*, A. Gumber*, R. Gupta, A. Gupta",
+      "venue": "TMLR",
+      "status": "Accepted Jul 2026",
+      "tier": "journal",
       "year": 2026,
-      "links": {},
-      "summary": "NanoDroid, a 5.1M-param backbone-free detector at 90.8% weighted F1, rivaling 125M UniXcoder at ~25× fewer parameters; accepted at the Deep Learning for Code and Human-AI Co-Creativity workshops.",
-      "astar": true
+      "astar": true,
+      "links": {
+        "openreview": "https://openreview.net/forum?id=2lIE1tgmRN"
+      },
+      "summary": "Hessian-curvature and Fourier-frequency experts with three-level attention, plug-and-play on YOLOv11/v12; consistent mAP gains on five tiny-object and blood-cell benchmarks for only 0.75M extra parameters."
     },
     {
-      "title": "Graph-Based Cross-Modal Learning for Drug–Target Affinity Prediction",
-      "venue": "ICML 2026 WS",
+      "title": "When the Label Measures the Estimator: Threshold Leakage in Estimate-Scaled Evaluation Labels",
+      "authors": "A. Gumber, S. Gumber",
+      "venue": "NeurIPS 2026 Workshop",
+      "venueLong": "TAE: Can We Trust AI Evaluation?",
       "status": "Accepted",
-      "authorship": null,
       "tier": "workshop",
       "year": 2026,
       "links": {
-        "paper": "https://openreview.net/forum?id=aakl14l0sJ"
+        "openreview": "https://openreview.net/forum?id=gJqq9RjLfv"
       },
-      "summary": "Heterogeneous GNN fusing molecular and ESM-2 protein graphs; 14.95% lower MSE and 5.05% higher CI over DMFF-DTA on KIBA cold-drug.",
-      "astar": true
+      "summary": "When labels are scaled by an estimate, estimator error leaks into the label and manufactures ranking skill that is not there.",
+      "note": "Extended version under double-blind review."
     },
     {
-      "title": "Adaptive Trimodal Fusion for Mental-Health Symptom Classification in Memes",
-      "venue": "ICML 2026 WS",
+      "title": "Pretraining Buys Short-Horizon Direction: A Randomly-Initialized Control for Frozen Temporal Representations",
+      "authors": "A. Gumber, A. Batra, H. Dehra, S. Gumber, N. Batra, A. Khandelwal, K. Thukral",
+      "venue": "NeurIPS 2026 Workshop",
+      "venueLong": "Foundation Models for Temporal Systems",
       "status": "Accepted",
-      "authorship": "Solo Author",
       "tier": "workshop",
       "year": 2026,
       "links": {
-        "paper": "https://openreview.net/forum?id=FBbO2ML253"
+        "openreview": "https://openreview.net/forum?id=MsX8cuxxRm"
       },
-      "summary": "A 1.7M-param trimodal head over frozen CLIP + MentalBART; 0.707 Macro-F1 on AxiOM, surpassing M3H with ~70× fewer trainable params.",
-      "astar": true
+      "summary": "An untrained twin matches a trained JEPA on volatility; pretraining adds only one to two hours of directional signal.",
+      "note": "Extended version under double-blind review."
     },
     {
-      "title": "Where to Read a Frozen Audio Encoder: Objective-Induced Geometry and Zero-Label Layer Selection",
-      "venue": "ICML 2026 WS",
+      "title": "The Wrong Clock for Transaction Streams: Why Equal-Time Windows Fail as Trading Thins",
+      "authors": "A. Gumber, S. Gumber, T. P. Singh, P. V. Garg, I. Shekhar",
+      "venue": "NeurIPS 2026 Workshop",
+      "venueLong": "Foundation Models for Temporal Systems",
       "status": "Accepted",
-      "authorship": null,
       "tier": "workshop",
       "year": 2026,
-      "links": {},
-      "summary": "Geometry-driven label-free layer selection recovers 24–38 points lost to final-layer readout; up to 23.9% lower low-resource ASR CER.",
-      "astar": true
+      "links": {
+        "openreview": "https://openreview.net/forum?id=kfitgafGIs"
+      },
+      "summary": "A volume clock adds 5.1 points of direction accuracy over equal-time windows across 14 NASDAQ ITCH sessions."
+    },
+    {
+      "title": "Monitoring a Volatility-Targeted Loss Limit: A Case Study in Estimator-Induced Miscalibration",
+      "authors": "A. Gumber, S. Gumber, P. V. Garg, I. Shekhar",
+      "venue": "NeurIPS 2026 Workshop",
+      "venueLong": "E-Values: From Statistics to ML",
+      "status": "Accepted",
+      "tier": "workshop",
+      "year": 2026,
+      "links": {
+        "openreview": "https://openreview.net/forum?id=fyuj2Yuazx"
+      },
+      "summary": "Range-based volatility estimators breach a loss limit at 1.9× its design rate; test-martingale monitoring catches it.",
+      "note": "Extended version under double-blind review."
+    },
+    {
+      "title": "Do Scalar Summaries of Foundation-Model Embedding Geometry Improve Volatility Forecasting? A Calibrated, Leakage-Aware Audit",
+      "authors": "A. Gumber, S. Gumber",
+      "venue": "NeurIPS 2026 Workshop",
+      "venueLong": "Foundation Models for Temporal Systems",
+      "status": "Accepted",
+      "tier": "workshop",
+      "year": 2026,
+      "links": {
+        "openreview": "https://openreview.net/forum?id=nfgtvnMKLt"
+      },
+      "summary": "A deflation cascade shows that in-sample geometry signals survive certification under none of seven encoders.",
+      "note": "Extended version under double-blind review."
     },
     {
       "title": "Faithful Is Not Interpretable: Sparse Features, Circuits, and Robustness in Frozen Audio Encoders",
-      "venue": "ICML 2026 WS",
+      "authors": "A. Batra, A. Khandelwal*, A. Gumber*, K. Thukral*",
+      "venue": "ICML 2026 Workshop",
+      "venueLong": "ML for Audio",
       "status": "Accepted",
-      "authorship": null,
       "tier": "workshop",
       "year": 2026,
-      "links": {},
-      "summary": "SAE/transcoder analysis across seven encoders separates faithfulness from interpretability under acoustic corruption.",
-      "astar": true
+      "links": {
+        "paper": "https://mlforaudioworkshop.github.io/accepted_submissions_2026/CameraReadys%204-83/74/CameraReady/Faithful%20Is%20Not%20Interpretable_compressed.pdf"
+      },
+      "summary": "SAEs and transcoders on seven audio encoders reach R² 0.998 yet correlate only 0.12 with monosemanticity."
     },
     {
-      "title": "SocialDF: Benchmark Dataset and Detection Model for Deepfake Content",
-      "venue": "ACM ICMR 2025 WS",
+      "title": "Where to Read a Frozen Audio Encoder: Objective-Induced Geometry and Zero-Label Layer Selection",
+      "authors": "A. Batra, A. Khandelwal*, A. Gumber*, K. Thukral*",
+      "venue": "ICML 2026 Workshop",
+      "venueLong": "ML for Audio",
       "status": "Accepted",
-      "authorship": null,
+      "tier": "workshop",
+      "year": 2026,
+      "links": {
+        "paper": "https://mlforaudioworkshop.github.io/accepted_submissions_2026/CameraReadys%204-83/73/CameraReady/Where%20to%20Read%20a%20Frozen%20Audio%20Encoder.pdf"
+      },
+      "summary": "Label-free layer selection recovers 24 to 38 points lost to final-layer readout and cuts low-resource ASR CER by up to 23.9%."
+    },
+    {
+      "title": "Adaptive Trimodal Fusion for Mental-Health Symptom Classification in Memes",
+      "authors": "A. Gumber",
+      "venue": "ICML 2026 Workshop",
+      "venueLong": "Trustworthy AI for Good",
+      "status": "Accepted",
+      "tier": "workshop",
+      "year": 2026,
+      "links": {
+        "openreview": "https://openreview.net/forum?id=FBbO2ML253"
+      },
+      "summary": "A 1.7M-parameter trimodal head over frozen CLIP and MentalBART; 0.707 Macro-F1 on AxiOM with about 70× fewer trainable parameters."
+    },
+    {
+      "title": "Graph-Based Cross-Modal Learning for Drug-Target Affinity Prediction",
+      "authors": "A. Attri, J. Khemani, A. Gumber, A. Gupta",
+      "venue": "ICML 2026 Workshop",
+      "venueLong": "AI for Science",
+      "status": "Accepted",
+      "tier": "workshop",
+      "year": 2026,
+      "links": {
+        "openreview": "https://openreview.net/forum?id=aakl14l0sJ"
+      },
+      "summary": "A heterogeneous GNN fusing molecular and ESM-2 protein graphs; 14.95% lower MSE on KIBA cold-drug."
+    },
+    {
+      "title": "DentalNet: Geometric Aware Multi-View Transformer for Occlusion Grade Prediction in Dental 3D Scans",
+      "authors": "A. Batra*, A. Gumber*, V. Sharma, R. Sardana, T. Tripathi, A. Gupta",
+      "venue": "NeurIPS 2025 Workshop",
+      "venueLong": "Imageomics",
+      "status": "Accepted",
+      "tier": "workshop",
+      "year": 2025,
+      "links": {
+        "openreview": "https://openreview.net/forum?id=PpDLNxxeYQ"
+      },
+      "summary": "2D/3D cross-attention over intraoral views and 3D scans for IOTN-DHC occlusion grading at 67% F1."
+    },
+    {
+      "title": "SocialDF: Benchmark Dataset and Detection Model for Mitigating Harmful Deepfake Content on Social Media Platforms",
+      "authors": "A. Batra, J. Khemani*, A. Gumber*, A. Kumar*, A. Jain, S. Gupta",
+      "venue": "ACM ICMR 2025 Workshop",
+      "venueLong": "MAD",
+      "status": "Accepted",
       "tier": "workshop",
       "year": 2025,
       "links": {
         "paper": "https://dl.acm.org/doi/10.1145/3733567.3735573",
         "talk": "https://www.youtube.com/watch?v=8i3ejDl3q_Q"
       },
-      "summary": "A real-world deepfake benchmark with a multi-agent LLM framework that beats SOTA lip-sync methods via fact-checking integration.",
-      "astar": false
+      "summary": "A real-world deepfake benchmark with a multi-agent LLM detector that integrates fact-checking."
     },
     {
-      "title": "TOAM-YOLO: A Tiny Object-Aware Multi-Expert YOLO Framework for Diverse Domains",
-      "venue": "TMLR",
-      "status": "Accepted",
-      "authorship": "Co-First Author",
-      "tier": "journal",
+      "title": "Who Convinced Whom? Tracing How LLMs Change Their Minds in Multi-Agent Systems",
+      "authors": "A. Batra, A. Khandelwal, J. Khemani, K. Thukral, A. Gumber, D. F. Lim, U. Kumar, P. X. Tan",
+      "venue": "arXiv",
+      "status": "Under double-blind review",
+      "tier": "preprint",
       "year": 2026,
-      "links": {},
-      "summary": "TOA-MoE (Hessian-curvature + Fourier-frequency experts with 3-level attention) plus BiFPN and CARAFE fusion, plug-and-play on YOLOv11/v12; consistent mAP gains across five tiny-object and blood-cell benchmarks while adding only 0.75M parameters.",
-      "astar": true
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.35930"
+      },
+      "summary": "MAD Bench, 2,400 questions: multi-agent debate raises unanimous wrong answers by 3.1 to 7.4 points, and we trace who moved whom."
     }
   ],
   "founder": {
     "kicker": "Co-Founder & Lead Researcher",
     "name": "StarkVision",
-    "description": "A 20-member student AI/ML research collective whose work spans an ICML 2026 Spotlight, 6 ICML 2026 workshop papers, CVPR 2025 (Demo Track) and a TMLR journal paper. I drove the core technical work behind our entry to the Govt. of India NCIIPC AI Grand Challenge, and mentor 10+ juniors from idea to acceptance.",
+    "description": "A 20-member student AI/ML research collective at IIIT-Delhi. Our work spans an ICML 2026 Spotlight, a TMLR journal paper, EMNLP 2026 Industry Track, CVPR 2025 Demo Track and a run of ICML and NeurIPS workshop papers. I set research direction, design experiments and mentor juniors from idea to acceptance; I was technical lead on our NCIIPC AI Grand Challenge entry, which became NivionAI.",
     "badges": [
       "ICML 2026 Spotlight",
-      "6 ICML 2026 workshops",
-      "CVPR 2025 Demo",
-      "TMLR · co-first author"
+      "TMLR",
+      "EMNLP 2026 Industry",
+      "CVPR 2025 Demo"
     ]
   },
   "founderStats": [
@@ -483,61 +575,108 @@
   ],
   "experience": [
     {
-      "kicker": "Industry",
-      "title": "Incoming SWE Intern, S&P Global",
-      "detail": "Joining the engineering team in June 2026, bringing ML research into production systems."
+      "kicker": "Research · Aug 2026 – now",
+      "title": "Research Intern, SHIBA AI (Tokyo, remote)",
+      "detail": "AI safety and mechanistic interpretability: representation-level analysis of multimodal LLMs and interventions on information flow in multi-agent debate, with Prof. Phan Xuan Tan.",
+      "link": "https://www.shiba-ai.jp/team/arush-gumber"
     },
     {
-      "kicker": "Research",
-      "title": "Computer Vision Research, Centre for AI (SBILab)",
-      "detail": "Under Prof. Anubha Gupta at the Centre for AI / SBILab, IIIT-Delhi: object/deepfake/tiny-object detection and multi-modal learning; co-first-author on multiple manuscripts."
+      "kicker": "Founder · Nov 2025 – now",
+      "title": "Co-Founder, NivionAI",
+      "detail": "Few-shot satellite object detection under an NDA with NCIIPC (NTRO), Government of India. Grew out of our Top 3 finish in the AI Grand Challenge."
     },
     {
-      "kicker": "Research",
-      "title": "Knowledge-Graph Learning, University of Vienna",
-      "detail": "With Prof. Dagmar Gromann (remote) on knowledge-graph representation learning and parameter-efficient fine-tuning (PEFT)."
+      "kicker": "Industry · Jun – Aug 2026",
+      "title": "Machine Learning Engineer Intern, S&P Global",
+      "detail": "Built an M-BERT document-relevance model for Capital IQ Pro and used LOES to pick intermediate layers; Industry Fundamentals F1 went from 40% to 90%."
     },
     {
-      "kicker": "Research",
-      "title": "Computational Biology, UC San Diego",
-      "detail": "With Prof. Pengtao Xie (remote): domain-adaptive transformers and Geneformer fine-tuning for phenotype classification from genomic data."
+      "kicker": "Research · Apr 2026 – now",
+      "title": "Research Collaborator, University of Vienna",
+      "detail": "With Prof. Dagmar Gromann (remote) on knowledge-graph representation learning and parameter-efficient fine-tuning."
     },
     {
-      "kicker": "Teaching",
+      "kicker": "Research · Dec 2024 – now",
+      "title": "Research Intern, Infosys Centre for AI (SBILab), IIIT-Delhi",
+      "detail": "With Prof. Anubha Gupta, my thesis advisor: representation learning, multimodal fusion and robust visual recognition. LOES, TOAM-YOLO, DentalNet and drug-target affinity came out of here."
+    },
+    {
+      "kicker": "Teaching · Jan – May 2026",
       "title": "Teaching Assistant, Machine Learning",
-      "detail": "Mentored a 120-student cohort (PhD/MTech/BTech): assignments, Kaggle competitions, office hours."
+      "detail": "120-student cohort (PhD, MTech, BTech) under Prof. Anubha Gupta: assignments, Kaggle competitions, office hours."
+    },
+    {
+      "kicker": "Research · Feb – Apr 2025",
+      "title": "Computational Biology, UC San Diego",
+      "detail": "With Prof. Pengtao Xie (remote): fine-tuned Geneformer and built RNA-seq pipelines for diabetic phenotype classification."
     }
   ],
   "news": [
     {
-      "date": "Jun 2026",
-      "title": "Incoming Software Engineer Intern, S&P Global",
-      "tag": "industry",
-      "detail": "Joining the engineering team in Gurgaon."
+      "date": "Nov 2026",
+      "title": "Reviewing for ICLR 2027 and AISTATS 2027",
+      "tag": "service",
+      "detail": "Three papers for ICLR and four for AISTATS, after reviewing for the EMNLP 2026 Industry Track."
     },
     {
-      "date": "May 2026",
-      "title": "Research Collaborator, University of Vienna",
+      "date": "Oct 2026",
+      "title": "Preprint: Who Convinced Whom?",
+      "tag": "preprint",
+      "detail": "Tracing how LLMs change their minds in multi-agent debate, with SHIBA AI. Under double-blind review."
+    },
+    {
+      "date": "Sep 2026",
+      "title": "Five first-author papers at NeurIPS 2026 workshops",
+      "tag": "workshops",
+      "detail": "Evaluation done honestly in ML for finance: threshold leakage, the wrong clock for order flow, untrained controls, e-value monitoring and embedding-geometry audits."
+    },
+    {
+      "date": "Aug 2026",
+      "title": "EMNLP 2026 Industry Track: NanoDroid accepted",
+      "tag": "main conference",
+      "detail": "A 5.1M-parameter, interpretable detector for AI-generated code."
+    },
+    {
+      "date": "Aug 2026",
+      "title": "Joined SHIBA AI as a research intern",
       "tag": "research",
-      "detail": "With Prof. Dagmar Gromann on knowledge-graph representation learning and PEFT."
+      "detail": "AI safety and mechanistic interpretability, remote from Tokyo."
+    },
+    {
+      "date": "Aug 2026",
+      "title": "Wrapped up the S&P Global internship",
+      "tag": "industry",
+      "detail": "Shipped a document-relevance model for Capital IQ Pro; Industry Fundamentals F1 from 40% to 90%."
+    },
+    {
+      "date": "Jul 2026",
+      "title": "TMLR: TOAM-YOLO accepted (co-first author)",
+      "tag": "journal",
+      "detail": "Tiny-object-aware multi-expert YOLO; consistent gains on five benchmarks at +0.75M parameters."
     },
     {
       "date": "2026",
-      "title": "ICML 2026 Spotlight: LOES (co-author)",
+      "title": "ICML 2026 Spotlight: LOES",
       "tag": "main conference",
       "detail": "Representation-geometry method accepted to the ICML main conference as a Spotlight."
     },
     {
       "date": "2026",
-      "title": "TMLR: TOAM-YOLO accepted (co-first author)",
-      "tag": "journal",
-      "detail": "A tiny-object-aware multi-expert YOLO framework; consistent gains across five benchmarks at +0.75M parameters."
+      "title": "Four ICML 2026 workshop papers",
+      "tag": "workshops",
+      "detail": "Two frozen-audio-encoder studies, trimodal memes (solo author) and drug-target affinity."
     },
     {
-      "date": "2026",
-      "title": "Six ICML 2026 workshop acceptances",
-      "tag": "workshops",
-      "detail": "NanoDroid across two workshops (Deep Learning for Code and Human-AI Co-Creativity), drug–target affinity, trimodal memes, and two frozen-audio-encoder studies."
+      "date": "Apr 2026",
+      "title": "Research collaborator, University of Vienna",
+      "tag": "research",
+      "detail": "With Prof. Dagmar Gromann on knowledge-graph representation learning and PEFT."
+    },
+    {
+      "date": "Nov 2025",
+      "title": "Co-founded NivionAI",
+      "tag": "founder",
+      "detail": "Few-shot satellite detection under an NDA with NCIIPC (NTRO), Government of India."
     },
     {
       "date": "2025",
@@ -546,22 +685,22 @@
       "detail": "DentalNet: geometry-aware multi-view 2D/3D fusion."
     },
     {
-      "date": "2025",
+      "date": "Oct 2025",
       "title": "Amazon ML Challenge: Rank 54 / 20,000+",
       "tag": "competition",
       "detail": "Top 0.3% with a multimodal price-prediction model."
     },
     {
       "date": "2025",
-      "title": "CVPR 2025 Demo Track accepted (2nd-yr undergrad)",
-      "tag": "main conference",
-      "detail": "M-SCAN spinal-stenosis grading."
+      "title": "NCIIPC AI Grand Challenge: Top 3 in PS-03, ₹38L",
+      "tag": "grant",
+      "detail": "Top 3 in our problem statement and Stage 2 cleared, among 670+ startups nationwide; ₹38 lakh secured."
     },
     {
       "date": "2025",
-      "title": "NCIIPC AI Grand Challenge: Top 3 in PS-03, ₹38L",
-      "tag": "grant",
-      "detail": "Top 3 in our problem statement (PS-03) and Stage 2 cleared, among 670+ startups nationwide; ₹38 lakhs secured."
+      "title": "CVPR 2025 Demo Track accepted (second-year undergrad)",
+      "tag": "main conference",
+      "detail": "M-SCAN spinal-stenosis grading, presented live."
     },
     {
       "date": "2024",
@@ -570,10 +709,10 @@
       "detail": "Top 2 of 100+ teams with the REDACT data-privacy platform."
     },
     {
-      "date": "May 2024",
+      "date": "Aug 2024",
       "title": "Co-founded StarkVision",
       "tag": "founder",
-      "detail": "A 20-member student AI/ML research collective at IIIT-Delhi; work accepted at an ICML 2026 Spotlight, 6 ICML workshops, CVPR 2025 Demo and TMLR."
+      "detail": "A 20-member student AI/ML research collective at IIIT-Delhi."
     }
   ],
   "about": {
@@ -596,45 +735,49 @@
         "text": "."
       }
     ],
-    "bio": "I work on representation learning across computer vision, audio, graphs and markets, with a recurring thread of reading the geometry of what models learn. I care about the moment a messy problem snaps into a representation where the answer is suddenly easy.",
-    "credentials": "Computer Science and Artificial Intelligence at IIIT-Delhi · GPA 8.91/10 · 2023–2027 · research under Prof. Anubha Gupta (SBILab, Centre for AI, IIIT-Delhi), with the University of Vienna and UC San Diego · incoming SWE intern at S&P Global."
+    "bio": "I work on what deep models actually learn, and on making that useful and trustworthy on real data: vision, language, audio, medicine and especially markets and data that arrives over time. I have traded markets since I was 16, which is probably why I distrust any backtest that looks too good.",
+    "credentials": "Computer Science and Artificial Intelligence at IIIT-Delhi · GPA 8.91/10 · 2023–2027 · thesis with Prof. Anubha Gupta (SBILab) · research intern at SHIBA AI · collaborating with the University of Vienna · previously ML intern at S&P Global."
   },
+  "researchIntro": "{count} peer-reviewed papers, including an ICML Spotlight, a TMLR journal paper and EMNLP. The A★ tag marks A* venues.",
   "skills": {
     "Languages": [
       "Python",
-      "Java",
       "C++",
+      "Java",
       "C"
     ],
-    "ML / CV": [
+    "ML / Research": [
       "PyTorch",
-      "TensorFlow",
+      "Hugging Face",
+      "PyG",
       "scikit-learn",
       "OpenCV",
-      "PyG",
-      "Hugging Face"
+      "TensorFlow",
+      "TransformerLens",
+      "PEFT"
     ],
     "LLM / Agents": [
       "LangGraph",
       "Ollama",
-      "Agent orchestration",
-      "PEFT"
+      "Agent orchestration"
     ],
-    "Tools": [
-      "Git",
+    "Systems": [
       "CUDA",
-      "W&B",
+      "Git",
       "Docker",
       "Linux",
-      "Streamlit"
+      "W&B",
+      "FastAPI",
+      "PostgreSQL",
+      "React"
     ]
   },
   "coursework": [
-    "Data Structures & Algorithms",
-    "Operating Systems",
-    "DBMS",
     "Machine Learning",
-    "Linear Algebra"
+    "Data Structures & Algorithms",
+    "Linear Algebra",
+    "Operating Systems",
+    "DBMS"
   ],
   "workIntro": [
     {

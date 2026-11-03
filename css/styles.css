@@ -667,6 +667,29 @@ a { color: inherit; }
   text-wrap: pretty;
 }
 .pub .link-row { margin-top: 9px; }
+.pub-authors {
+  margin: 0 0 7px;
+  font-family: var(--mono);
+  font-size: 11.5px;
+  line-height: 1.55;
+  color: var(--muted);
+}
+.pub-self { color: var(--text); font-weight: 500; }
+.pub-note {
+  margin: 6px 0 0;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--accent);
+}
+.updated {
+  margin-left: 14px;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--faint);
+  white-space: nowrap;
+}
 .pub .xlink { font-size: 11px; }
 
 .build {
@@ -889,6 +912,8 @@ a { color: inherit; }
 @media (max-width: 759px) {
   .nav-links { display: none; }
   .nav-toggle { display: flex; }
+  .brand-tag { display: none; }
+  .updated { margin-left: auto; margin-right: 12px; }
   .pub { grid-template-columns: 1fr; }
   .build-cards { grid-template-columns: 1fr; }
   .news-row { grid-template-columns: 1fr; }

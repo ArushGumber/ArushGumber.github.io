@@ -1,6 +1,6 @@
 (function () {
   var LINK_LABELS = {
-    preprint: 'Pre-print', paper: 'Paper', code: 'Code', demo: 'Demo', talk: 'Talk',
+    preprint: 'Pre-print', paper: 'Paper', openreview: 'OpenReview', code: 'Code', demo: 'Demo', talk: 'Talk',
     website: 'Website', scholar: 'Scholar', github: 'GitHub', linkedin: 'LinkedIn', resume: 'Résumé'
   };
   var SOCIAL_ORDER = ['scholar', 'github', 'linkedin'];
@@ -14,6 +14,11 @@
     return n;
   }
   function clear(n) { while (n.firstChild) n.removeChild(n.firstChild); }
+  var MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  function formatDate(iso) {
+    var p = (iso || '').split('-');
+    return p.length === 3 ? parseInt(p[2], 10) + ' ' + MONTHS[parseInt(p[1], 10) - 1] + ' ' + p[0] : iso;
+  }
   function pad2(x) { return x < 10 ? '0' + x : '' + x; }
 
   function linkRow(links, cls) {
@@ -35,6 +40,7 @@
     var state = { hover: null, filter: null };
 
     document.getElementById('year').textContent = new Date().getFullYear();
+    if (data.updated) document.getElementById('updated').textContent = 'updated ' + formatDate(data.updated);
 
     renderHero(data);
     renderWorkIntro(data);
@@ -209,9 +215,22 @@
       host.appendChild(node('div', 'case-rule'));
     }
 
+    function authorLine(authors, self) {
+      var line = node('div', 'pub-authors');
+      authors.split(', ').forEach(function (name, i) {
+        if (i > 0) line.appendChild(document.createTextNode(', '));
+        var bare = name.replace(/\*$/, '');
+        if (bare === self) line.appendChild(node('strong', 'pub-self', name));
+        else line.appendChild(document.createTextNode(name));
+      });
+      return line;
+    }
+
     function renderPublications(d) {
       var host = document.getElementById('pub-groups');
       clear(host);
+      var accepted = d.publications.filter(function (p) { return p.tier !== 'preprint'; }).length;
+      if (d.researchIntro) document.getElementById('research-intro').textContent = d.researchIntro.replace('{count}', accepted);
       TIER_ORDER.forEach(function (tier) {
         var items = d.publications.filter(function (p) { return p.tier === tier; });
         if (!items.length) return;
@@ -228,11 +247,13 @@
           venueLine.appendChild(document.createTextNode(p.venue));
           if (p.astar) venueLine.appendChild(node('span', 'astar-badge', 'A★'));
           meta.appendChild(venueLine);
+          if (p.venueLong) meta.appendChild(node('div', 'pub-authorship', p.venueLong));
           meta.appendChild(node('div', null, p.year + ' · ' + p.status));
-          if (p.authorship) meta.appendChild(node('div', 'pub-authorship', p.authorship));
           var body = node('div');
           body.appendChild(node('h4', 'pub-title', p.title));
+          if (p.authors) body.appendChild(authorLine(p.authors, d.profile.self));
           body.appendChild(node('p', 'pub-summary', p.summary));
+          if (p.note) body.appendChild(node('p', 'pub-note', p.note));
           if (p.links && Object.keys(p.links).length) body.appendChild(linkRow(p.links));
           row.appendChild(meta);
           row.appendChild(body);
@@ -267,6 +288,7 @@
         card.appendChild(node('div', 'build-kicker', b.kicker));
         card.appendChild(node('h3', 'build-title', b.title));
         card.appendChild(node('p', 'build-detail', b.detail));
+        if (b.link) card.appendChild(linkRow({ website: b.link }));
         host.appendChild(card);
       });
     }
